@@ -17,7 +17,8 @@ pipeline {
 
         stage ('Build') {
             steps {
-                sh 'mvn -Dmaven.test.failure.ignore=true verify' 
+                sh 'rm -f /root/.m2/repository/org/owasp/dependency-check-utils/5.0.0-M3-SNAPSHOT/../../dependency-check-data/4.0/odc.update.lock';
+                sh 'mvn -Dmaven.test.failure.ignore=true org.owasp:dependency-check-maven:5.0.0-m3-snapshot:purge verify' 
             }
             post {
                 success {
