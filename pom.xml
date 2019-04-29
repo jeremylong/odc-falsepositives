@@ -478,7 +478,6 @@
                 <configuration>
                     <format>ALL</format>
                     <centralAnalyzerEnabled>false</centralAnalyzerEnabled>
-                    <dataDirectory>/var/jenkins_home/odc</dataDirectory>
                     <hintsFile>${basedir}/src/main/resources/hints.xml</hintsFile>
                     <enableExperimental>true</enableExperimental>
                     <suppressionFiles>
