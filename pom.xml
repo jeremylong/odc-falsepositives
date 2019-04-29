@@ -9,7 +9,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <plugins.odc.version>5.0.0-M3-SNAPSHOT</plugins.odc.version>
+        <plugins.odc.version>5.0.0.1-M3-SNAPSHOT</plugins.odc.version>
     </properties>
     <!--
     maven-scm-provider-cvsexe
