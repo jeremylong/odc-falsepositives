@@ -1,10 +1,4 @@
 pipeline {
-    agent {
-        docker {
-            image 'maven:3-alpine' 
-            args '-v /root/.m2:/root/.m2' 
-        }
-    }
     stages {
         stage ('Initialize') {
             steps {
@@ -17,7 +11,7 @@ pipeline {
 
         stage ('Build') {
             steps {
-                sh 'mvn -DdataDirectory=/var/jenkins_home/odc -Dmaven.test.failure.ignore=true package' 
+                echo "building..."
             }
             post {
                 success {
