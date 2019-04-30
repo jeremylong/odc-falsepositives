@@ -17,7 +17,7 @@ pipeline {
 
         stage ('Build') {
             steps {
-                sh 'mvn -DdataDirectory=/var/jenkins_home/odc -Dmaven.test.failure.ignore=true verify' 
+                sh 'mvn -DdataDirectory=/var/jenkins_home/odc -Dmaven.test.failure.ignore=true package' 
             }
             post {
                 success {
