@@ -476,7 +476,8 @@
                 <artifactId>dependency-check-maven</artifactId>
                 <version>${plugins.odc.version}</version>
                 <configuration>
-                    <format>ALL</format>
+                    <format>HTML,JUNIT</format>
+                    <junitFailOnCVSS>6.0</junitFailOnCVSS>
                     <centralAnalyzerEnabled>false</centralAnalyzerEnabled>
                     <hintsFile>${basedir}/src/main/resources/hints.xml</hintsFile>
                     <enableExperimental>true</enableExperimental>
