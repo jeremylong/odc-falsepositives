@@ -1,4 +1,11 @@
 pipeline {
+    agent {
+        docker {
+            image 'maven:3-alpine'
+            label 'builder'
+            args  '-v /tmp:/tmp'
+        }
+    }
     stages {
         stage ('Initialize') {
             steps {
@@ -11,7 +18,7 @@ pipeline {
 
         stage ('Build') {
             steps {
-                echo "building..."
+                echo "building"
             }
             post {
                 success {
