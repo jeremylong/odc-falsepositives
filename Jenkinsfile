@@ -17,7 +17,7 @@ pipeline {
 
         stage ('Build') {
             steps {
-                echo "building"
+                sh 'touch target/dependency-check-junit.xml' 
             }
             post {
                 success {
