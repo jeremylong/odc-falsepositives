@@ -4,7 +4,6 @@ import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 
-// Extend HttpServlet class
 public class SimpleServlet extends HttpServlet {
 
     private static final long serialVersionUID = 278457735741304509L;
@@ -13,8 +12,7 @@ public class SimpleServlet extends HttpServlet {
 
     @Override
     public void init() throws ServletException {
-        // Do required initialization
-        message = "Hello World";
+        message = "Hello World!";
     }
 
     @Override
