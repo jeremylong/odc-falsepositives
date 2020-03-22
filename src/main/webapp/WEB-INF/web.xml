@@ -5,5 +5,13 @@
          version="2.5">
     <display-name>odc false positives</display-name>
     
+    <servlet>
+        <servlet-name>SimpleServlet</servlet-name>
+        <servlet-class>org.dependencycheck.testing.SimpleServlet</servlet-class>
+    </servlet>
 
+    <servlet-mapping>
+        <servlet-name>SimpleServlet</servlet-name>
+        <url-pattern>/SimpleServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
