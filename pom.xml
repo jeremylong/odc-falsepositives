@@ -10,9 +10,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <plugins.odc.version>5.3.1</plugins.odc.version>
+        <plugins.odc.version>6.0.3-SNAPSHOT</plugins.odc.version>
     </properties>
     <repositories>
+        <repository>
+            <id>maven-central</id>
+            <url>https://repo1.maven.org/maven2/</url>
+        </repository>
         <repository>
             <id>itext</id>
             <url>https://repo.itextsupport.com/releases</url>
@@ -68,6 +72,7 @@
             <name>gradle</name>
             <url>https://plugins.gradle.org/m2/</url>
         </repository>
+        
     </repositories>
     <pluginRepositories>
         <pluginRepository>
@@ -86,7 +91,29 @@
         
     </pluginRepositories>
     <dependencies>
+        <dependency>
+            <groupId>com.vaadin</groupId>
+            <artifactId>vaadin-grid-testbench</artifactId>
+            <version>5.1.0</version>
+        </dependency>    
+        <dependency>
+            <groupId>com.vaadin</groupId>
+            <artifactId>vaadin-date-time-picker-testbench</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.vaadin</groupId>
+            <artifactId>vaadin-board-testbench</artifactId>
+            <version>4.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.vaadin</groupId>
+            <artifactId>vaadin-crud-testbench</artifactId>
+            <version>3.1.0</version>
+        </dependency>
 
+
+        
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
@@ -127,7 +154,7 @@
                 <inherited>false</inherited>
                 <configuration>
                     <formats>
-                        <format>ALL</format>
+                        <formats>all</formats>
                         <!--format>HTML</format>
                         <format>JUNIT</format>
                         <format>CSV</format-->

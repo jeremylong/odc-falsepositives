@@ -1,7 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=US-ASCII"
-         pageEncoding="US-ASCII"%>
+<%@ page language="java" contentType="text/html; charset=US-ASCII" pageEncoding="US-ASCII"%>
 <%@taglib prefix="e" uri="https://www.owasp.org/index.php/OWASP_Java_Encoder_Project" %>
-
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
