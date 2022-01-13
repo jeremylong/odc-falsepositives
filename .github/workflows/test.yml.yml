@@ -12,6 +12,7 @@ jobs:
            SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       - name: upload
         uses: actions/upload-artifact@v2
+        if: always()
         with:
           name: sarif
           path: snyk-sarif1.json
