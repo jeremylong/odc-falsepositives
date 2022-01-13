@@ -1,19 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <hints xmlns="https://jeremylong.github.io/DependencyCheck/dependency-hint.1.3.xsd">
-    <hint>
-        <given>
-            <evidence type="vendor" source="pom" name="groupId" value="xerces" confidence="HIGHEST"/>
-        </given>
-        <add>
-            <evidence type="vendor" source="hint analyzer" name="vendor" value="xerces2_java" confidence="HIGHEST"/>
-        </add>
-    </hint>
-    <hint>
-        <given>
-            <evidence type="product" source="pom" name="artifactid" value="xercesImpl" confidence="HIGHEST"/>
-        </given>
-        <add>
-            <evidence type="product" source="hint analyzer" name="product" value="apache" confidence="HIGHEST"/>
-        </add>
-    </hint>
+
 </hints>
