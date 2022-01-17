@@ -1623,9 +1623,9 @@
             "index" : 3
           }
         },
-        "logicalLocation" : {
+        "logicalLocations" : [ {
           "fullyQualifiedName" : "pkg:maven/org.apache.commons/commons-compress@1.19"
-        }
+        } ]
       } ]
     }, {
       "ruleId" : "CVE-2021-35516",
@@ -1640,9 +1640,9 @@
             "index" : 3
           }
         },
-        "logicalLocation" : {
+        "logicalLocations" : [ {
           "fullyQualifiedName" : "pkg:maven/org.apache.commons/commons-compress@1.19"
-        }
+        } ]
       } ]
     }, {
       "ruleId" : "CVE-2021-35517",
@@ -1657,9 +1657,9 @@
             "index" : 3
           }
         },
-        "logicalLocation" : {
+        "logicalLocations" : [ {
           "fullyQualifiedName" : "pkg:maven/org.apache.commons/commons-compress@1.19"
-        }
+        } ]
       } ]
     }, {
       "ruleId" : "CVE-2021-36090",
@@ -1674,9 +1674,9 @@
             "index" : 3
           }
         },
-        "logicalLocation" : {
+        "logicalLocations" : [ {
           "fullyQualifiedName" : "pkg:maven/org.apache.commons/commons-compress@1.19"
-        }
+        } ]
       } ]
     }, {
       "ruleId" : "CVE-2021-29425",
@@ -1691,9 +1691,9 @@
             "index" : 4
           }
         },
-        "logicalLocation" : {
+        "logicalLocations" : [ {
           "fullyQualifiedName" : "pkg:maven/commons-io/commons-io@2.6"
-        }
+        } ]
       } ]
     }, {
       "ruleId" : "CVE-2020-8908",
@@ -1708,9 +1708,9 @@
             "index" : 18
           }
         },
-        "logicalLocation" : {
+        "logicalLocations" : [ {
           "fullyQualifiedName" : "pkg:maven/com.google.guava/guava@28.1-jre"
-        }
+        } ]
       } ]
     }, {
       "ruleId" : "CVE-2021-23463",
@@ -1725,9 +1725,9 @@
             "index" : 19
           }
         },
-        "logicalLocation" : {
+        "logicalLocations" : [ {
           "fullyQualifiedName" : "pkg:maven/com.h2database/h2@1.4.196"
-        }
+        } ]
       } ]
     }, {
       "ruleId" : "CVE-2020-35490",
@@ -1742,9 +1742,9 @@
             "index" : 22
           }
         },
-        "logicalLocation" : {
+        "logicalLocations" : [ {
           "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
-        }
+        } ]
       } ]
     }, {
       "ruleId" : "CVE-2020-35491",
@@ -1759,9 +1759,9 @@
             "index" : 22
           }
         },
-        "logicalLocation" : {
+        "logicalLocations" : [ {
           "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
-        }
+        } ]
       } ]
     }, {
       "ruleId" : "CVE-2020-35728",
@@ -1776,9 +1776,9 @@
             "index" : 22
           }
         },
-        "logicalLocation" : {
+        "logicalLocations" : [ {
           "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
-        }
+        } ]
       } ]
     }, {
       "ruleId" : "CVE-2020-36179",
@@ -1793,9 +1793,9 @@
             "index" : 22
           }
         },
-        "logicalLocation" : {
+        "logicalLocations" : [ {
           "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
-        }
+        } ]
       } ]
     }, {
       "ruleId" : "CVE-2020-36180",
@@ -1810,9 +1810,9 @@
             "index" : 22
           }
         },
-        "logicalLocation" : {
+        "logicalLocations" : [ {
           "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
-        }
+        } ]
       } ]
     }, {
       "ruleId" : "CVE-2020-36181",
@@ -1827,9 +1827,9 @@
             "index" : 22
           }
         },
-        "logicalLocation" : {
+        "logicalLocations" : [ {
           "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
-        }
+        } ]
       } ]
     }, {
       "ruleId" : "CVE-2020-36182",
@@ -1844,9 +1844,9 @@
             "index" : 22
           }
         },
-        "logicalLocation" : {
+        "logicalLocations" : [ {
           "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
-        }
+        } ]
       } ]
     }, {
       "ruleId" : "CVE-2020-36183",
@@ -1861,9 +1861,9 @@
             "index" : 22
           }
         },
-        "logicalLocation" : {
+        "logicalLocations" : [ {
           "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
-        }
+        } ]
       } ]
     }, {
       "ruleId" : "CVE-2020-36184",
@@ -1878,9 +1878,9 @@
             "index" : 22
           }
         },
-        "logicalLocation" : {
+        "logicalLocations" : [ {
           "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
-        }
+        } ]
       } ]
     }, {
       "ruleId" : "CVE-2020-36185",
@@ -1895,9 +1895,9 @@
             "index" : 22
           }
         },
-        "logicalLocation" : {
+        "logicalLocations" : [ {
           "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
-        }
+        } ]
       } ]
     }, {
       "ruleId" : "CVE-2020-36186",
@@ -1912,9 +1912,9 @@
             "index" : 22
           }
         },
-        "logicalLocation" : {
+        "logicalLocations" : [ {
           "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
-        }
+        } ]
       } ]
     }, {
       "ruleId" : "CVE-2020-36187",
@@ -1929,9 +1929,9 @@
             "index" : 22
           }
         },
-        "logicalLocation" : {
+        "logicalLocations" : [ {
           "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
-        }
+        } ]
       } ]
     }, {
       "ruleId" : "CVE-2020-36188",
@@ -1946,9 +1946,9 @@
             "index" : 22
           }
         },
-        "logicalLocation" : {
+        "logicalLocations" : [ {
           "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
-        }
+        } ]
       } ]
     }, {
       "ruleId" : "CVE-2020-36189",
@@ -1963,9 +1963,9 @@
             "index" : 22
           }
         },
-        "logicalLocation" : {
+        "logicalLocations" : [ {
           "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
-        }
+        } ]
       } ]
     }, {
       "ruleId" : "CVE-2021-37714",
@@ -1980,9 +1980,9 @@
             "index" : 30
           }
         },
-        "logicalLocation" : {
+        "logicalLocations" : [ {
           "fullyQualifiedName" : "pkg:maven/org.jsoup/jsoup@1.12.1"
-        }
+        } ]
       } ]
     }, {
       "ruleId" : "CVE-2020-13936",
@@ -1997,9 +1997,9 @@
             "index" : 48
           }
         },
-        "logicalLocation" : {
+        "logicalLocations" : [ {
           "fullyQualifiedName" : "pkg:maven/org.apache.velocity/velocity-engine-core@2.1"
-        }
+        } ]
       } ]
     } ]
   } ]
