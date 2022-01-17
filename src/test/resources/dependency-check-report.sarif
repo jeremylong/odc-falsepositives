@@ -17,7 +17,7 @@
           },
           "help" : {
             "text" : "",
-            "markdown" : "For more information see [CVE-2021-36090](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-36090).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2021-36090](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-36090).\nIf this is a false positive - consider using the HTML report to generate a suppression file.See [How dependency-check works](https://jeremylong.github.io/DependencyCheck/general/internals.html), [How to read the HTML report](https://jeremylong.github.io/DependencyCheck/general/thereport.html), and [Suppressing false positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)."
           },
           "properties" : {
             "cvssv2_score" : 5.0,
@@ -53,7 +53,7 @@
           },
           "help" : {
             "text" : "",
-            "markdown" : "For more information see [CVE-2020-13936](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-13936).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-13936](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-13936).\nIf this is a false positive - consider using the HTML report to generate a suppression file.See [How dependency-check works](https://jeremylong.github.io/DependencyCheck/general/internals.html), [How to read the HTML report](https://jeremylong.github.io/DependencyCheck/general/thereport.html), and [Suppressing false positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)."
           },
           "properties" : {
             "cvssv2_score" : 9.0,
@@ -89,7 +89,7 @@
           },
           "help" : {
             "text" : "",
-            "markdown" : "For more information see [CVE-2021-35517](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-35517).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2021-35517](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-35517).\nIf this is a false positive - consider using the HTML report to generate a suppression file.See [How dependency-check works](https://jeremylong.github.io/DependencyCheck/general/internals.html), [How to read the HTML report](https://jeremylong.github.io/DependencyCheck/general/thereport.html), and [Suppressing false positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)."
           },
           "properties" : {
             "cvssv2_score" : 5.0,
@@ -125,7 +125,7 @@
           },
           "help" : {
             "text" : "",
-            "markdown" : "For more information see [CVE-2021-35516](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-35516).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2021-35516](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-35516).\nIf this is a false positive - consider using the HTML report to generate a suppression file.See [How dependency-check works](https://jeremylong.github.io/DependencyCheck/general/internals.html), [How to read the HTML report](https://jeremylong.github.io/DependencyCheck/general/thereport.html), and [Suppressing false positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)."
           },
           "properties" : {
             "cvssv2_score" : 5.0,
@@ -161,7 +161,7 @@
           },
           "help" : {
             "text" : "",
-            "markdown" : "For more information see [CVE-2020-35728](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-35728).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-35728](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-35728).\nIf this is a false positive - consider using the HTML report to generate a suppression file.See [How dependency-check works](https://jeremylong.github.io/DependencyCheck/general/internals.html), [How to read the HTML report](https://jeremylong.github.io/DependencyCheck/general/thereport.html), and [Suppressing false positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
@@ -197,7 +197,7 @@
           },
           "help" : {
             "text" : "",
-            "markdown" : "For more information see [CVE-2021-35515](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-35515).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2021-35515](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-35515).\nIf this is a false positive - consider using the HTML report to generate a suppression file.See [How dependency-check works](https://jeremylong.github.io/DependencyCheck/general/internals.html), [How to read the HTML report](https://jeremylong.github.io/DependencyCheck/general/thereport.html), and [Suppressing false positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)."
           },
           "properties" : {
             "cvssv2_score" : 5.0,
@@ -233,7 +233,7 @@
           },
           "help" : {
             "text" : "",
-            "markdown" : "For more information see [CVE-2020-8908](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-8908).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-8908](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-8908).\nIf this is a false positive - consider using the HTML report to generate a suppression file.See [How dependency-check works](https://jeremylong.github.io/DependencyCheck/general/internals.html), [How to read the HTML report](https://jeremylong.github.io/DependencyCheck/general/thereport.html), and [Suppressing false positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)."
           },
           "properties" : {
             "cvssv2_score" : 2.1,
@@ -269,7 +269,7 @@
           },
           "help" : {
             "text" : "",
-            "markdown" : "For more information see [CVE-2020-36189](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36189).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-36189](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36189).\nIf this is a false positive - consider using the HTML report to generate a suppression file.See [How dependency-check works](https://jeremylong.github.io/DependencyCheck/general/internals.html), [How to read the HTML report](https://jeremylong.github.io/DependencyCheck/general/thereport.html), and [Suppressing false positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
@@ -305,7 +305,7 @@
           },
           "help" : {
             "text" : "",
-            "markdown" : "For more information see [CVE-2020-36188](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36188).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-36188](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36188).\nIf this is a false positive - consider using the HTML report to generate a suppression file.See [How dependency-check works](https://jeremylong.github.io/DependencyCheck/general/internals.html), [How to read the HTML report](https://jeremylong.github.io/DependencyCheck/general/thereport.html), and [Suppressing false positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
@@ -341,7 +341,7 @@
           },
           "help" : {
             "text" : "",
-            "markdown" : "For more information see [CVE-2021-37714](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-37714).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2021-37714](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-37714).\nIf this is a false positive - consider using the HTML report to generate a suppression file.See [How dependency-check works](https://jeremylong.github.io/DependencyCheck/general/internals.html), [How to read the HTML report](https://jeremylong.github.io/DependencyCheck/general/thereport.html), and [Suppressing false positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)."
           },
           "properties" : {
             "cvssv2_score" : 5.0,
@@ -377,7 +377,7 @@
           },
           "help" : {
             "text" : "",
-            "markdown" : "For more information see [CVE-2020-36179](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36179).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-36179](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36179).\nIf this is a false positive - consider using the HTML report to generate a suppression file.See [How dependency-check works](https://jeremylong.github.io/DependencyCheck/general/internals.html), [How to read the HTML report](https://jeremylong.github.io/DependencyCheck/general/thereport.html), and [Suppressing false positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
@@ -413,7 +413,7 @@
           },
           "help" : {
             "text" : "",
-            "markdown" : "For more information see [CVE-2021-29425](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-29425).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2021-29425](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-29425).\nIf this is a false positive - consider using the HTML report to generate a suppression file.See [How dependency-check works](https://jeremylong.github.io/DependencyCheck/general/internals.html), [How to read the HTML report](https://jeremylong.github.io/DependencyCheck/general/thereport.html), and [Suppressing false positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)."
           },
           "properties" : {
             "cvssv2_score" : 5.8,
@@ -449,7 +449,7 @@
           },
           "help" : {
             "text" : "",
-            "markdown" : "For more information see [CVE-2020-36181](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36181).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-36181](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36181).\nIf this is a false positive - consider using the HTML report to generate a suppression file.See [How dependency-check works](https://jeremylong.github.io/DependencyCheck/general/internals.html), [How to read the HTML report](https://jeremylong.github.io/DependencyCheck/general/thereport.html), and [Suppressing false positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
@@ -485,7 +485,7 @@
           },
           "help" : {
             "text" : "",
-            "markdown" : "For more information see [CVE-2020-36180](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36180).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-36180](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36180).\nIf this is a false positive - consider using the HTML report to generate a suppression file.See [How dependency-check works](https://jeremylong.github.io/DependencyCheck/general/internals.html), [How to read the HTML report](https://jeremylong.github.io/DependencyCheck/general/thereport.html), and [Suppressing false positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
@@ -521,7 +521,7 @@
           },
           "help" : {
             "text" : "",
-            "markdown" : "For more information see [CVE-2020-35490](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-35490).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-35490](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-35490).\nIf this is a false positive - consider using the HTML report to generate a suppression file.See [How dependency-check works](https://jeremylong.github.io/DependencyCheck/general/internals.html), [How to read the HTML report](https://jeremylong.github.io/DependencyCheck/general/thereport.html), and [Suppressing false positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
@@ -557,7 +557,7 @@
           },
           "help" : {
             "text" : "",
-            "markdown" : "For more information see [CVE-2020-36183](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36183).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-36183](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36183).\nIf this is a false positive - consider using the HTML report to generate a suppression file.See [How dependency-check works](https://jeremylong.github.io/DependencyCheck/general/internals.html), [How to read the HTML report](https://jeremylong.github.io/DependencyCheck/general/thereport.html), and [Suppressing false positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
@@ -593,7 +593,7 @@
           },
           "help" : {
             "text" : "",
-            "markdown" : "For more information see [CVE-2021-23463](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-23463).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2021-23463](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-23463).\nIf this is a false positive - consider using the HTML report to generate a suppression file.See [How dependency-check works](https://jeremylong.github.io/DependencyCheck/general/internals.html), [How to read the HTML report](https://jeremylong.github.io/DependencyCheck/general/thereport.html), and [Suppressing false positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)."
           },
           "properties" : {
             "cvssv2_score" : 6.4,
@@ -629,7 +629,7 @@
           },
           "help" : {
             "text" : "",
-            "markdown" : "For more information see [CVE-2020-36182](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36182).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-36182](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36182).\nIf this is a false positive - consider using the HTML report to generate a suppression file.See [How dependency-check works](https://jeremylong.github.io/DependencyCheck/general/internals.html), [How to read the HTML report](https://jeremylong.github.io/DependencyCheck/general/thereport.html), and [Suppressing false positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
@@ -665,7 +665,7 @@
           },
           "help" : {
             "text" : "",
-            "markdown" : "For more information see [CVE-2020-36185](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36185).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-36185](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36185).\nIf this is a false positive - consider using the HTML report to generate a suppression file.See [How dependency-check works](https://jeremylong.github.io/DependencyCheck/general/internals.html), [How to read the HTML report](https://jeremylong.github.io/DependencyCheck/general/thereport.html), and [Suppressing false positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
@@ -701,7 +701,7 @@
           },
           "help" : {
             "text" : "",
-            "markdown" : "For more information see [CVE-2020-35491](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-35491).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-35491](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-35491).\nIf this is a false positive - consider using the HTML report to generate a suppression file.See [How dependency-check works](https://jeremylong.github.io/DependencyCheck/general/internals.html), [How to read the HTML report](https://jeremylong.github.io/DependencyCheck/general/thereport.html), and [Suppressing false positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
@@ -737,7 +737,7 @@
           },
           "help" : {
             "text" : "",
-            "markdown" : "For more information see [CVE-2020-36184](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36184).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-36184](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36184).\nIf this is a false positive - consider using the HTML report to generate a suppression file.See [How dependency-check works](https://jeremylong.github.io/DependencyCheck/general/internals.html), [How to read the HTML report](https://jeremylong.github.io/DependencyCheck/general/thereport.html), and [Suppressing false positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
@@ -773,7 +773,7 @@
           },
           "help" : {
             "text" : "",
-            "markdown" : "For more information see [CVE-2020-36187](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36187).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-36187](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36187).\nIf this is a false positive - consider using the HTML report to generate a suppression file.See [How dependency-check works](https://jeremylong.github.io/DependencyCheck/general/internals.html), [How to read the HTML report](https://jeremylong.github.io/DependencyCheck/general/thereport.html), and [Suppressing false positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
@@ -809,7 +809,7 @@
           },
           "help" : {
             "text" : "",
-            "markdown" : "For more information see [CVE-2020-36186](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36186).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-36186](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36186).\nIf this is a false positive - consider using the HTML report to generate a suppression file.See [How dependency-check works](https://jeremylong.github.io/DependencyCheck/general/internals.html), [How to read the HTML report](https://jeremylong.github.io/DependencyCheck/general/thereport.html), and [Suppressing false positives](https://jeremylong.github.io/DependencyCheck/general/suppression.html)."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
