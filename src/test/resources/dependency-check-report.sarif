@@ -1620,14 +1620,12 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "/Users/jeremy/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar",
-            "index" : 3
+            "index" : 3,
+            "description" : "pkg:maven/org.apache.commons/commons-compress@1.19"
           }
         },
         "logicalLocation" : {
-          "fullyQualifiedName" : "pkg:maven/org.apache.commons/commons-compress@1.19",
-          "properties" : {
-            "test" : "prop"
-          }
+          "fullyQualifiedName" : "pkg:maven/org.apache.commons/commons-compress@1.19"
         }
       } ]
     }, {
@@ -1640,14 +1638,12 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "/Users/jeremy/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar",
-            "index" : 3
+            "index" : 3,
+            "description" : "pkg:maven/org.apache.commons/commons-compress@1.19"
           }
         },
         "logicalLocation" : {
-          "fullyQualifiedName" : "pkg:maven/org.apache.commons/commons-compress@1.19",
-          "properties" : {
-            "test" : "prop"
-          }
+          "fullyQualifiedName" : "pkg:maven/org.apache.commons/commons-compress@1.19"
         }
       } ]
     }, {
@@ -1660,14 +1656,12 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "/Users/jeremy/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar",
-            "index" : 3
+            "index" : 3,
+            "description" : "pkg:maven/org.apache.commons/commons-compress@1.19"
           }
         },
         "logicalLocation" : {
-          "fullyQualifiedName" : "pkg:maven/org.apache.commons/commons-compress@1.19",
-          "properties" : {
-            "test" : "prop"
-          }
+          "fullyQualifiedName" : "pkg:maven/org.apache.commons/commons-compress@1.19"
         }
       } ]
     }, {
@@ -1680,14 +1674,12 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "/Users/jeremy/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar",
-            "index" : 3
+            "index" : 3,
+            "description" : "pkg:maven/org.apache.commons/commons-compress@1.19"
           }
         },
         "logicalLocation" : {
-          "fullyQualifiedName" : "pkg:maven/org.apache.commons/commons-compress@1.19",
-          "properties" : {
-            "test" : "prop"
-          }
+          "fullyQualifiedName" : "pkg:maven/org.apache.commons/commons-compress@1.19"
         }
       } ]
     }, {
@@ -1700,14 +1692,12 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "/Users/jeremy/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar",
-            "index" : 4
+            "index" : 4,
+            "description" : "pkg:maven/commons-io/commons-io@2.6"
           }
         },
         "logicalLocation" : {
-          "fullyQualifiedName" : "pkg:maven/commons-io/commons-io@2.6",
-          "properties" : {
-            "test" : "prop"
-          }
+          "fullyQualifiedName" : "pkg:maven/commons-io/commons-io@2.6"
         }
       } ]
     }, {
@@ -1720,14 +1710,12 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "/Users/jeremy/.m2/repository/com/google/guava/guava/28.1-jre/guava-28.1-jre.jar",
-            "index" : 18
+            "index" : 18,
+            "description" : "pkg:maven/com.google.guava/guava@28.1-jre"
           }
         },
         "logicalLocation" : {
-          "fullyQualifiedName" : "pkg:maven/com.google.guava/guava@28.1-jre",
-          "properties" : {
-            "test" : "prop"
-          }
+          "fullyQualifiedName" : "pkg:maven/com.google.guava/guava@28.1-jre"
         }
       } ]
     }, {
@@ -1740,14 +1728,12 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "/Users/jeremy/.m2/repository/com/h2database/h2/1.4.196/h2-1.4.196.jar",
-            "index" : 19
+            "index" : 19,
+            "description" : "pkg:maven/com.h2database/h2@1.4.196"
           }
         },
         "logicalLocation" : {
-          "fullyQualifiedName" : "pkg:maven/com.h2database/h2@1.4.196",
-          "properties" : {
-            "test" : "prop"
-          }
+          "fullyQualifiedName" : "pkg:maven/com.h2database/h2@1.4.196"
         }
       } ]
     }, {
@@ -1760,14 +1746,12 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
-            "index" : 22
+            "index" : 22,
+            "description" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           }
         },
         "logicalLocation" : {
-          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7",
-          "properties" : {
-            "test" : "prop"
-          }
+          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
         }
       } ]
     }, {
@@ -1780,14 +1764,12 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
-            "index" : 22
+            "index" : 22,
+            "description" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           }
         },
         "logicalLocation" : {
-          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7",
-          "properties" : {
-            "test" : "prop"
-          }
+          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
         }
       } ]
     }, {
@@ -1800,14 +1782,12 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
-            "index" : 22
+            "index" : 22,
+            "description" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           }
         },
         "logicalLocation" : {
-          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7",
-          "properties" : {
-            "test" : "prop"
-          }
+          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
         }
       } ]
     }, {
@@ -1820,14 +1800,12 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
-            "index" : 22
+            "index" : 22,
+            "description" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           }
         },
         "logicalLocation" : {
-          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7",
-          "properties" : {
-            "test" : "prop"
-          }
+          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
         }
       } ]
     }, {
@@ -1840,14 +1818,12 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
-            "index" : 22
+            "index" : 22,
+            "description" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           }
         },
         "logicalLocation" : {
-          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7",
-          "properties" : {
-            "test" : "prop"
-          }
+          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
         }
       } ]
     }, {
@@ -1860,14 +1836,12 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
-            "index" : 22
+            "index" : 22,
+            "description" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           }
         },
         "logicalLocation" : {
-          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7",
-          "properties" : {
-            "test" : "prop"
-          }
+          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
         }
       } ]
     }, {
@@ -1880,14 +1854,12 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
-            "index" : 22
+            "index" : 22,
+            "description" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           }
         },
         "logicalLocation" : {
-          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7",
-          "properties" : {
-            "test" : "prop"
-          }
+          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
         }
       } ]
     }, {
@@ -1900,14 +1872,12 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
-            "index" : 22
+            "index" : 22,
+            "description" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           }
         },
         "logicalLocation" : {
-          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7",
-          "properties" : {
-            "test" : "prop"
-          }
+          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
         }
       } ]
     }, {
@@ -1920,14 +1890,12 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
-            "index" : 22
+            "index" : 22,
+            "description" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           }
         },
         "logicalLocation" : {
-          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7",
-          "properties" : {
-            "test" : "prop"
-          }
+          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
         }
       } ]
     }, {
@@ -1940,14 +1908,12 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
-            "index" : 22
+            "index" : 22,
+            "description" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           }
         },
         "logicalLocation" : {
-          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7",
-          "properties" : {
-            "test" : "prop"
-          }
+          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
         }
       } ]
     }, {
@@ -1960,14 +1926,12 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
-            "index" : 22
+            "index" : 22,
+            "description" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           }
         },
         "logicalLocation" : {
-          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7",
-          "properties" : {
-            "test" : "prop"
-          }
+          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
         }
       } ]
     }, {
@@ -1980,14 +1944,12 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
-            "index" : 22
+            "index" : 22,
+            "description" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           }
         },
         "logicalLocation" : {
-          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7",
-          "properties" : {
-            "test" : "prop"
-          }
+          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
         }
       } ]
     }, {
@@ -2000,14 +1962,12 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
-            "index" : 22
+            "index" : 22,
+            "description" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           }
         },
         "logicalLocation" : {
-          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7",
-          "properties" : {
-            "test" : "prop"
-          }
+          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
         }
       } ]
     }, {
@@ -2020,14 +1980,12 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
-            "index" : 22
+            "index" : 22,
+            "description" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           }
         },
         "logicalLocation" : {
-          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7",
-          "properties" : {
-            "test" : "prop"
-          }
+          "fullyQualifiedName" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
         }
       } ]
     }, {
@@ -2040,14 +1998,12 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "/Users/jeremy/.m2/repository/org/jsoup/jsoup/1.12.1/jsoup-1.12.1.jar",
-            "index" : 30
+            "index" : 30,
+            "description" : "pkg:maven/org.jsoup/jsoup@1.12.1"
           }
         },
         "logicalLocation" : {
-          "fullyQualifiedName" : "pkg:maven/org.jsoup/jsoup@1.12.1",
-          "properties" : {
-            "test" : "prop"
-          }
+          "fullyQualifiedName" : "pkg:maven/org.jsoup/jsoup@1.12.1"
         }
       } ]
     }, {
@@ -2060,14 +2016,12 @@
         "physicalLocation" : {
           "artifactLocation" : {
             "uri" : "/Users/jeremy/.m2/repository/org/apache/velocity/velocity-engine-core/2.1/velocity-engine-core-2.1.jar",
-            "index" : 48
+            "index" : 48,
+            "description" : "pkg:maven/org.apache.velocity/velocity-engine-core@2.1"
           }
         },
         "logicalLocation" : {
-          "fullyQualifiedName" : "pkg:maven/org.apache.velocity/velocity-engine-core@2.1",
-          "properties" : {
-            "test" : "prop"
-          }
+          "fullyQualifiedName" : "pkg:maven/org.apache.velocity/velocity-engine-core@2.1"
         }
       } ]
     } ]
