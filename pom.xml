@@ -9,7 +9,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <plugins.odc.version>6.5.3-SNAPSHOT</plugins.odc.version>
+        <plugins.odc.version>6.5.4-SNAPSHOT</plugins.odc.version>
     </properties>
     <repositories>
         <repository>
@@ -177,11 +177,11 @@
                 </dependencies>
                 <inherited>false</inherited>
                 <configuration>
-                    <!--formats>
+                    <formats>
                         <format>HTML</format>
                         <format>JUNIT</format>
-                        <format>CSV</format>
-                    </formats-->
+                        <format>SARIF</format>
+                    </formats>
                     <retireJsAnalyzerEnabled>false</retireJsAnalyzerEnabled>
                     <prettyPrint>true</prettyPrint>
                     <junitFailOnCVSS>6.0</junitFailOnCVSS>
