@@ -1,0 +1,1845 @@
+{
+  "$schema" : "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "version" : "2.1.0",
+  "runs" : [ {
+    "tool" : {
+      "driver" : {
+        "name" : "dependency-check",
+        "version" : "6.5.4-SNAPSHOT",
+        "informationUri" : "https://jeremylong.github.io/DependencyCheck/",
+        "rules" : [ {
+          "id" : "CVE-2021-36090",
+          "shortDescription" : {
+            "text" : "HIGH severity - NVD-CWE-Other vulnerability in  in pkg:maven/org.apache.commons/commons-compress@1.19"
+          },
+          "fullDescription" : {
+            "text" : "When reading a specially crafted ZIP archive, Compress can be made to allocate large amounts of memory that finally leads to an out of memory error even for very small inputs. This could be used to mount a denial of service attack against services that use Compress' zip package."
+          },
+          "properties" : {
+            "cvssv2_score" : 5.0,
+            "cvssv2_accessVector" : "NETWORK",
+            "cvssv2_accessComplexity" : "LOW",
+            "cvssv2_authenticationr" : "NONE",
+            "cvssv2_confidentialImpact" : "$enc.json($rule.cvssv2ConfidentialityImpact)",
+            "cvssv2_integrityImpact" : "NONE",
+            "cvssv2_availabilityImpact" : "PARTIAL",
+            "cvssv2_severity" : "MEDIUM",
+            "cvssv3_baseScore" : 7.5,
+            "cvssv3_attackVector" : "NETWORK",
+            "cvssv3_attackComplexity" : "LOW",
+            "cvssv3_privilegesRequired" : "NONE",
+            "cvssv3_userInteraction" : "NONE",
+            "cvssv3_scope" : "UNCHANGED",
+            "cvssv3_confidentialityImpact" : "NONE",
+            "cvssv3_integrityImpact" : "NONE",
+            "cvssv3_availabilityImpact" : "HIGH",
+            "cvssv3_baseSeverity" : "HIGH",
+            "cvssv3_exploitabilityScore" : "3.9",
+            "cvssv3_impactScore" : "3.6",
+            "cvssv3_version" : "3.1",
+            "source" : "NVD"
+          }
+        }, {
+          "id" : "CVE-2020-13936",
+          "shortDescription" : {
+            "text" : "HIGH severity - NVD-CWE-noinfo vulnerability in  in pkg:maven/org.apache.velocity/velocity-engine-core@2.1"
+          },
+          "fullDescription" : {
+            "text" : "An attacker that is able to modify Velocity templates may execute arbitrary Java code or run arbitrary system commands with the same privileges as the account running the Servlet container. This applies to applications that allow untrusted users to upload/modify velocity templates running Apache Velocity Engine versions up to 2.2."
+          },
+          "properties" : {
+            "cvssv2_score" : 9.0,
+            "cvssv2_accessVector" : "NETWORK",
+            "cvssv2_accessComplexity" : "LOW",
+            "cvssv2_authenticationr" : "SINGLE",
+            "cvssv2_confidentialImpact" : "$enc.json($rule.cvssv2ConfidentialityImpact)",
+            "cvssv2_integrityImpact" : "COMPLETE",
+            "cvssv2_availabilityImpact" : "COMPLETE",
+            "cvssv2_severity" : "HIGH",
+            "cvssv3_baseScore" : 8.8,
+            "cvssv3_attackVector" : "NETWORK",
+            "cvssv3_attackComplexity" : "LOW",
+            "cvssv3_privilegesRequired" : "LOW",
+            "cvssv3_userInteraction" : "NONE",
+            "cvssv3_scope" : "UNCHANGED",
+            "cvssv3_confidentialityImpact" : "HIGH",
+            "cvssv3_integrityImpact" : "HIGH",
+            "cvssv3_availabilityImpact" : "HIGH",
+            "cvssv3_baseSeverity" : "HIGH",
+            "cvssv3_exploitabilityScore" : "2.8",
+            "cvssv3_impactScore" : "5.9",
+            "cvssv3_version" : "3.1",
+            "source" : "NVD"
+          }
+        }, {
+          "id" : "CVE-2021-35517",
+          "shortDescription" : {
+            "text" : "HIGH severity - CWE-770 Allocation of Resources Without Limits or Throttling vulnerability in  in pkg:maven/org.apache.commons/commons-compress@1.19"
+          },
+          "fullDescription" : {
+            "text" : "When reading a specially crafted TAR archive, Compress can be made to allocate large amounts of memory that finally leads to an out of memory error even for very small inputs. This could be used to mount a denial of service attack against services that use Compress' tar package."
+          },
+          "properties" : {
+            "cvssv2_score" : 5.0,
+            "cvssv2_accessVector" : "NETWORK",
+            "cvssv2_accessComplexity" : "LOW",
+            "cvssv2_authenticationr" : "NONE",
+            "cvssv2_confidentialImpact" : "$enc.json($rule.cvssv2ConfidentialityImpact)",
+            "cvssv2_integrityImpact" : "NONE",
+            "cvssv2_availabilityImpact" : "PARTIAL",
+            "cvssv2_severity" : "MEDIUM",
+            "cvssv3_baseScore" : 7.5,
+            "cvssv3_attackVector" : "NETWORK",
+            "cvssv3_attackComplexity" : "LOW",
+            "cvssv3_privilegesRequired" : "NONE",
+            "cvssv3_userInteraction" : "NONE",
+            "cvssv3_scope" : "UNCHANGED",
+            "cvssv3_confidentialityImpact" : "NONE",
+            "cvssv3_integrityImpact" : "NONE",
+            "cvssv3_availabilityImpact" : "HIGH",
+            "cvssv3_baseSeverity" : "HIGH",
+            "cvssv3_exploitabilityScore" : "3.9",
+            "cvssv3_impactScore" : "3.6",
+            "cvssv3_version" : "3.1",
+            "source" : "NVD"
+          }
+        }, {
+          "id" : "CVE-2021-35516",
+          "shortDescription" : {
+            "text" : "HIGH severity - CWE-770 Allocation of Resources Without Limits or Throttling vulnerability in  in pkg:maven/org.apache.commons/commons-compress@1.19"
+          },
+          "fullDescription" : {
+            "text" : "When reading a specially crafted 7Z archive, Compress can be made to allocate large amounts of memory that finally leads to an out of memory error even for very small inputs. This could be used to mount a denial of service attack against services that use Compress' sevenz package."
+          },
+          "properties" : {
+            "cvssv2_score" : 5.0,
+            "cvssv2_accessVector" : "NETWORK",
+            "cvssv2_accessComplexity" : "LOW",
+            "cvssv2_authenticationr" : "NONE",
+            "cvssv2_confidentialImpact" : "$enc.json($rule.cvssv2ConfidentialityImpact)",
+            "cvssv2_integrityImpact" : "NONE",
+            "cvssv2_availabilityImpact" : "PARTIAL",
+            "cvssv2_severity" : "MEDIUM",
+            "cvssv3_baseScore" : 7.5,
+            "cvssv3_attackVector" : "NETWORK",
+            "cvssv3_attackComplexity" : "LOW",
+            "cvssv3_privilegesRequired" : "NONE",
+            "cvssv3_userInteraction" : "NONE",
+            "cvssv3_scope" : "UNCHANGED",
+            "cvssv3_confidentialityImpact" : "NONE",
+            "cvssv3_integrityImpact" : "NONE",
+            "cvssv3_availabilityImpact" : "HIGH",
+            "cvssv3_baseSeverity" : "HIGH",
+            "cvssv3_exploitabilityScore" : "3.9",
+            "cvssv3_impactScore" : "3.6",
+            "cvssv3_version" : "3.1",
+            "source" : "NVD"
+          }
+        }, {
+          "id" : "CVE-2020-35728",
+          "shortDescription" : {
+            "text" : "HIGH severity - CWE-502 Deserialization of Untrusted Data vulnerability in  in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+          },
+          "fullDescription" : {
+            "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to com.oracle.wls.shaded.org.apache.xalan.lib.sql.JNDIConnectionPool (aka embedded Xalan in org.glassfish.web/javax.servlet.jsp.jstl)."
+          },
+          "properties" : {
+            "cvssv2_score" : 6.8,
+            "cvssv2_accessVector" : "NETWORK",
+            "cvssv2_accessComplexity" : "MEDIUM",
+            "cvssv2_authenticationr" : "NONE",
+            "cvssv2_confidentialImpact" : "$enc.json($rule.cvssv2ConfidentialityImpact)",
+            "cvssv2_integrityImpact" : "PARTIAL",
+            "cvssv2_availabilityImpact" : "PARTIAL",
+            "cvssv2_severity" : "MEDIUM",
+            "cvssv3_baseScore" : 8.1,
+            "cvssv3_attackVector" : "NETWORK",
+            "cvssv3_attackComplexity" : "HIGH",
+            "cvssv3_privilegesRequired" : "NONE",
+            "cvssv3_userInteraction" : "NONE",
+            "cvssv3_scope" : "UNCHANGED",
+            "cvssv3_confidentialityImpact" : "HIGH",
+            "cvssv3_integrityImpact" : "HIGH",
+            "cvssv3_availabilityImpact" : "HIGH",
+            "cvssv3_baseSeverity" : "HIGH",
+            "cvssv3_exploitabilityScore" : "2.2",
+            "cvssv3_impactScore" : "5.9",
+            "cvssv3_version" : "3.1",
+            "source" : "NVD"
+          }
+        }, {
+          "id" : "CVE-2021-35515",
+          "shortDescription" : {
+            "text" : "HIGH severity - CWE-834 Excessive Iteration vulnerability in  in pkg:maven/org.apache.commons/commons-compress@1.19"
+          },
+          "fullDescription" : {
+            "text" : "When reading a specially crafted 7Z archive, the construction of the list of codecs that decompress an entry can result in an infinite loop. This could be used to mount a denial of service attack against services that use Compress' sevenz package."
+          },
+          "properties" : {
+            "cvssv2_score" : 5.0,
+            "cvssv2_accessVector" : "NETWORK",
+            "cvssv2_accessComplexity" : "LOW",
+            "cvssv2_authenticationr" : "NONE",
+            "cvssv2_confidentialImpact" : "$enc.json($rule.cvssv2ConfidentialityImpact)",
+            "cvssv2_integrityImpact" : "NONE",
+            "cvssv2_availabilityImpact" : "PARTIAL",
+            "cvssv2_severity" : "MEDIUM",
+            "cvssv3_baseScore" : 7.5,
+            "cvssv3_attackVector" : "NETWORK",
+            "cvssv3_attackComplexity" : "LOW",
+            "cvssv3_privilegesRequired" : "NONE",
+            "cvssv3_userInteraction" : "NONE",
+            "cvssv3_scope" : "UNCHANGED",
+            "cvssv3_confidentialityImpact" : "NONE",
+            "cvssv3_integrityImpact" : "NONE",
+            "cvssv3_availabilityImpact" : "HIGH",
+            "cvssv3_baseSeverity" : "HIGH",
+            "cvssv3_exploitabilityScore" : "3.9",
+            "cvssv3_impactScore" : "3.6",
+            "cvssv3_version" : "3.1",
+            "source" : "NVD"
+          }
+        }, {
+          "id" : "CVE-2020-8908",
+          "shortDescription" : {
+            "text" : "LOW severity - CWE-732 Incorrect Permission Assignment for Critical Resource vulnerability in  in pkg:maven/com.google.guava/guava@28.1-jre"
+          },
+          "fullDescription" : {
+            "text" : "A temp directory creation vulnerability exists in all versions of Guava, allowing an attacker with access to the machine to potentially access data in a temporary directory created by the Guava API com.google.common.io.Files.createTempDir(). By default, on unix-like systems, the created directory is world-readable (readable by an attacker with access to the system). The method in question has been marked @Deprecated in versions 30.0 and later and should not be used. For Android developers, we recommend choosing a temporary directory API provided by Android, such as context.getCacheDir(). For other Java developers, we recommend migrating to the Java 7 API java.nio.file.Files.createTempDirectory() which explicitly configures permissions of 700, or configuring the Java runtime's java.io.tmpdir system property to point to a location whose permissions are appropriately configured."
+          },
+          "properties" : {
+            "cvssv2_score" : 2.1,
+            "cvssv2_accessVector" : "LOCAL",
+            "cvssv2_accessComplexity" : "LOW",
+            "cvssv2_authenticationr" : "NONE",
+            "cvssv2_confidentialImpact" : "$enc.json($rule.cvssv2ConfidentialityImpact)",
+            "cvssv2_integrityImpact" : "NONE",
+            "cvssv2_availabilityImpact" : "NONE",
+            "cvssv2_severity" : "LOW",
+            "cvssv3_baseScore" : 3.3,
+            "cvssv3_attackVector" : "LOCAL",
+            "cvssv3_attackComplexity" : "LOW",
+            "cvssv3_privilegesRequired" : "LOW",
+            "cvssv3_userInteraction" : "NONE",
+            "cvssv3_scope" : "UNCHANGED",
+            "cvssv3_confidentialityImpact" : "LOW",
+            "cvssv3_integrityImpact" : "NONE",
+            "cvssv3_availabilityImpact" : "NONE",
+            "cvssv3_baseSeverity" : "LOW",
+            "cvssv3_exploitabilityScore" : "1.8",
+            "cvssv3_impactScore" : "1.4",
+            "cvssv3_version" : "3.1",
+            "source" : "NVD"
+          }
+        }, {
+          "id" : "CVE-2020-36189",
+          "shortDescription" : {
+            "text" : "HIGH severity - CWE-502 Deserialization of Untrusted Data vulnerability in  in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+          },
+          "fullDescription" : {
+            "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to com.newrelic.agent.deps.ch.qos.logback.core.db.DriverManagerConnectionSource."
+          },
+          "properties" : {
+            "cvssv2_score" : 6.8,
+            "cvssv2_accessVector" : "NETWORK",
+            "cvssv2_accessComplexity" : "MEDIUM",
+            "cvssv2_authenticationr" : "NONE",
+            "cvssv2_confidentialImpact" : "$enc.json($rule.cvssv2ConfidentialityImpact)",
+            "cvssv2_integrityImpact" : "PARTIAL",
+            "cvssv2_availabilityImpact" : "PARTIAL",
+            "cvssv2_severity" : "MEDIUM",
+            "cvssv3_baseScore" : 8.1,
+            "cvssv3_attackVector" : "NETWORK",
+            "cvssv3_attackComplexity" : "HIGH",
+            "cvssv3_privilegesRequired" : "NONE",
+            "cvssv3_userInteraction" : "NONE",
+            "cvssv3_scope" : "UNCHANGED",
+            "cvssv3_confidentialityImpact" : "HIGH",
+            "cvssv3_integrityImpact" : "HIGH",
+            "cvssv3_availabilityImpact" : "HIGH",
+            "cvssv3_baseSeverity" : "HIGH",
+            "cvssv3_exploitabilityScore" : "2.2",
+            "cvssv3_impactScore" : "5.9",
+            "cvssv3_version" : "3.1",
+            "source" : "NVD"
+          }
+        }, {
+          "id" : "CVE-2020-36188",
+          "shortDescription" : {
+            "text" : "HIGH severity - CWE-502 Deserialization of Untrusted Data vulnerability in  in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+          },
+          "fullDescription" : {
+            "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to com.newrelic.agent.deps.ch.qos.logback.core.db.JNDIConnectionSource."
+          },
+          "properties" : {
+            "cvssv2_score" : 6.8,
+            "cvssv2_accessVector" : "NETWORK",
+            "cvssv2_accessComplexity" : "MEDIUM",
+            "cvssv2_authenticationr" : "NONE",
+            "cvssv2_confidentialImpact" : "$enc.json($rule.cvssv2ConfidentialityImpact)",
+            "cvssv2_integrityImpact" : "PARTIAL",
+            "cvssv2_availabilityImpact" : "PARTIAL",
+            "cvssv2_severity" : "MEDIUM",
+            "cvssv3_baseScore" : 8.1,
+            "cvssv3_attackVector" : "NETWORK",
+            "cvssv3_attackComplexity" : "HIGH",
+            "cvssv3_privilegesRequired" : "NONE",
+            "cvssv3_userInteraction" : "NONE",
+            "cvssv3_scope" : "UNCHANGED",
+            "cvssv3_confidentialityImpact" : "HIGH",
+            "cvssv3_integrityImpact" : "HIGH",
+            "cvssv3_availabilityImpact" : "HIGH",
+            "cvssv3_baseSeverity" : "HIGH",
+            "cvssv3_exploitabilityScore" : "2.2",
+            "cvssv3_impactScore" : "5.9",
+            "cvssv3_version" : "3.1",
+            "source" : "NVD"
+          }
+        }, {
+          "id" : "CVE-2021-37714",
+          "shortDescription" : {
+            "text" : "HIGH severity - CWE-835 Loop with Unreachable Exit Condition ('Infinite Loop') vulnerability in  in pkg:maven/org.jsoup/jsoup@1.12.1"
+          },
+          "fullDescription" : {
+            "text" : "jsoup is a Java library for working with HTML. Those using jsoup versions prior to 1.14.2 to parse untrusted HTML or XML may be vulnerable to DOS attacks. If the parser is run on user supplied input, an attacker may supply content that causes the parser to get stuck (loop indefinitely until cancelled), to complete more slowly than usual, or to throw an unexpected exception. This effect may support a denial of service attack. The issue is patched in version 1.14.2. There are a few available workarounds. Users may rate limit input parsing, limit the size of inputs based on system resources, and/or implement thread watchdogs to cap and timeout parse runtimes."
+          },
+          "properties" : {
+            "cvssv2_score" : 5.0,
+            "cvssv2_accessVector" : "NETWORK",
+            "cvssv2_accessComplexity" : "LOW",
+            "cvssv2_authenticationr" : "NONE",
+            "cvssv2_confidentialImpact" : "$enc.json($rule.cvssv2ConfidentialityImpact)",
+            "cvssv2_integrityImpact" : "NONE",
+            "cvssv2_availabilityImpact" : "PARTIAL",
+            "cvssv2_severity" : "MEDIUM",
+            "cvssv3_baseScore" : 7.5,
+            "cvssv3_attackVector" : "NETWORK",
+            "cvssv3_attackComplexity" : "LOW",
+            "cvssv3_privilegesRequired" : "NONE",
+            "cvssv3_userInteraction" : "NONE",
+            "cvssv3_scope" : "UNCHANGED",
+            "cvssv3_confidentialityImpact" : "NONE",
+            "cvssv3_integrityImpact" : "NONE",
+            "cvssv3_availabilityImpact" : "HIGH",
+            "cvssv3_baseSeverity" : "HIGH",
+            "cvssv3_exploitabilityScore" : "3.9",
+            "cvssv3_impactScore" : "3.6",
+            "cvssv3_version" : "3.1",
+            "source" : "NVD"
+          }
+        }, {
+          "id" : "CVE-2020-36179",
+          "shortDescription" : {
+            "text" : "HIGH severity - CWE-502 Deserialization of Untrusted Data vulnerability in  in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+          },
+          "fullDescription" : {
+            "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to oadd.org.apache.commons.dbcp.cpdsadapter.DriverAdapterCPDS."
+          },
+          "properties" : {
+            "cvssv2_score" : 6.8,
+            "cvssv2_accessVector" : "NETWORK",
+            "cvssv2_accessComplexity" : "MEDIUM",
+            "cvssv2_authenticationr" : "NONE",
+            "cvssv2_confidentialImpact" : "$enc.json($rule.cvssv2ConfidentialityImpact)",
+            "cvssv2_integrityImpact" : "PARTIAL",
+            "cvssv2_availabilityImpact" : "PARTIAL",
+            "cvssv2_severity" : "MEDIUM",
+            "cvssv3_baseScore" : 8.1,
+            "cvssv3_attackVector" : "NETWORK",
+            "cvssv3_attackComplexity" : "HIGH",
+            "cvssv3_privilegesRequired" : "NONE",
+            "cvssv3_userInteraction" : "NONE",
+            "cvssv3_scope" : "UNCHANGED",
+            "cvssv3_confidentialityImpact" : "HIGH",
+            "cvssv3_integrityImpact" : "HIGH",
+            "cvssv3_availabilityImpact" : "HIGH",
+            "cvssv3_baseSeverity" : "HIGH",
+            "cvssv3_exploitabilityScore" : "2.2",
+            "cvssv3_impactScore" : "5.9",
+            "cvssv3_version" : "3.1",
+            "source" : "NVD"
+          }
+        }, {
+          "id" : "CVE-2021-29425",
+          "shortDescription" : {
+            "text" : "MEDIUM severity - CWE-22 Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in  in pkg:maven/commons-io/commons-io@2.6"
+          },
+          "fullDescription" : {
+            "text" : "In Apache Commons IO before 2.7, When invoking the method FileNameUtils.normalize with an improper input string, like \"//../foo\", or \"\\\\..\\foo\", the result would be the same value, thus possibly providing access to files in the parent directory, but not further above (thus \"limited\" path traversal), if the calling code would use the result to construct a path value."
+          },
+          "properties" : {
+            "cvssv2_score" : 5.8,
+            "cvssv2_accessVector" : "NETWORK",
+            "cvssv2_accessComplexity" : "MEDIUM",
+            "cvssv2_authenticationr" : "NONE",
+            "cvssv2_confidentialImpact" : "$enc.json($rule.cvssv2ConfidentialityImpact)",
+            "cvssv2_integrityImpact" : "PARTIAL",
+            "cvssv2_availabilityImpact" : "NONE",
+            "cvssv2_severity" : "MEDIUM",
+            "cvssv3_baseScore" : 4.8,
+            "cvssv3_attackVector" : "NETWORK",
+            "cvssv3_attackComplexity" : "HIGH",
+            "cvssv3_privilegesRequired" : "NONE",
+            "cvssv3_userInteraction" : "NONE",
+            "cvssv3_scope" : "UNCHANGED",
+            "cvssv3_confidentialityImpact" : "LOW",
+            "cvssv3_integrityImpact" : "LOW",
+            "cvssv3_availabilityImpact" : "NONE",
+            "cvssv3_baseSeverity" : "MEDIUM",
+            "cvssv3_exploitabilityScore" : "2.2",
+            "cvssv3_impactScore" : "2.5",
+            "cvssv3_version" : "3.1",
+            "source" : "NVD"
+          }
+        }, {
+          "id" : "CVE-2020-36181",
+          "shortDescription" : {
+            "text" : "HIGH severity - CWE-502 Deserialization of Untrusted Data vulnerability in  in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+          },
+          "fullDescription" : {
+            "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.tomcat.dbcp.dbcp.cpdsadapter.DriverAdapterCPDS."
+          },
+          "properties" : {
+            "cvssv2_score" : 6.8,
+            "cvssv2_accessVector" : "NETWORK",
+            "cvssv2_accessComplexity" : "MEDIUM",
+            "cvssv2_authenticationr" : "NONE",
+            "cvssv2_confidentialImpact" : "$enc.json($rule.cvssv2ConfidentialityImpact)",
+            "cvssv2_integrityImpact" : "PARTIAL",
+            "cvssv2_availabilityImpact" : "PARTIAL",
+            "cvssv2_severity" : "MEDIUM",
+            "cvssv3_baseScore" : 8.1,
+            "cvssv3_attackVector" : "NETWORK",
+            "cvssv3_attackComplexity" : "HIGH",
+            "cvssv3_privilegesRequired" : "NONE",
+            "cvssv3_userInteraction" : "NONE",
+            "cvssv3_scope" : "UNCHANGED",
+            "cvssv3_confidentialityImpact" : "HIGH",
+            "cvssv3_integrityImpact" : "HIGH",
+            "cvssv3_availabilityImpact" : "HIGH",
+            "cvssv3_baseSeverity" : "HIGH",
+            "cvssv3_exploitabilityScore" : "2.2",
+            "cvssv3_impactScore" : "5.9",
+            "cvssv3_version" : "3.1",
+            "source" : "NVD"
+          }
+        }, {
+          "id" : "CVE-2020-36180",
+          "shortDescription" : {
+            "text" : "HIGH severity - CWE-502 Deserialization of Untrusted Data vulnerability in  in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+          },
+          "fullDescription" : {
+            "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.commons.dbcp2.cpdsadapter.DriverAdapterCPDS."
+          },
+          "properties" : {
+            "cvssv2_score" : 6.8,
+            "cvssv2_accessVector" : "NETWORK",
+            "cvssv2_accessComplexity" : "MEDIUM",
+            "cvssv2_authenticationr" : "NONE",
+            "cvssv2_confidentialImpact" : "$enc.json($rule.cvssv2ConfidentialityImpact)",
+            "cvssv2_integrityImpact" : "PARTIAL",
+            "cvssv2_availabilityImpact" : "PARTIAL",
+            "cvssv2_severity" : "MEDIUM",
+            "cvssv3_baseScore" : 8.1,
+            "cvssv3_attackVector" : "NETWORK",
+            "cvssv3_attackComplexity" : "HIGH",
+            "cvssv3_privilegesRequired" : "NONE",
+            "cvssv3_userInteraction" : "NONE",
+            "cvssv3_scope" : "UNCHANGED",
+            "cvssv3_confidentialityImpact" : "HIGH",
+            "cvssv3_integrityImpact" : "HIGH",
+            "cvssv3_availabilityImpact" : "HIGH",
+            "cvssv3_baseSeverity" : "HIGH",
+            "cvssv3_exploitabilityScore" : "2.2",
+            "cvssv3_impactScore" : "5.9",
+            "cvssv3_version" : "3.1",
+            "source" : "NVD"
+          }
+        }, {
+          "id" : "CVE-2020-35490",
+          "shortDescription" : {
+            "text" : "HIGH severity - CWE-502 Deserialization of Untrusted Data vulnerability in  in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+          },
+          "fullDescription" : {
+            "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.commons.dbcp2.datasources.PerUserPoolDataSource."
+          },
+          "properties" : {
+            "cvssv2_score" : 6.8,
+            "cvssv2_accessVector" : "NETWORK",
+            "cvssv2_accessComplexity" : "MEDIUM",
+            "cvssv2_authenticationr" : "NONE",
+            "cvssv2_confidentialImpact" : "$enc.json($rule.cvssv2ConfidentialityImpact)",
+            "cvssv2_integrityImpact" : "PARTIAL",
+            "cvssv2_availabilityImpact" : "PARTIAL",
+            "cvssv2_severity" : "MEDIUM",
+            "cvssv3_baseScore" : 8.1,
+            "cvssv3_attackVector" : "NETWORK",
+            "cvssv3_attackComplexity" : "HIGH",
+            "cvssv3_privilegesRequired" : "NONE",
+            "cvssv3_userInteraction" : "NONE",
+            "cvssv3_scope" : "UNCHANGED",
+            "cvssv3_confidentialityImpact" : "HIGH",
+            "cvssv3_integrityImpact" : "HIGH",
+            "cvssv3_availabilityImpact" : "HIGH",
+            "cvssv3_baseSeverity" : "HIGH",
+            "cvssv3_exploitabilityScore" : "2.2",
+            "cvssv3_impactScore" : "5.9",
+            "cvssv3_version" : "3.1",
+            "source" : "NVD"
+          }
+        }, {
+          "id" : "CVE-2020-36183",
+          "shortDescription" : {
+            "text" : "HIGH severity - CWE-502 Deserialization of Untrusted Data vulnerability in  in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+          },
+          "fullDescription" : {
+            "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.docx4j.org.apache.xalan.lib.sql.JNDIConnectionPool."
+          },
+          "properties" : {
+            "cvssv2_score" : 6.8,
+            "cvssv2_accessVector" : "NETWORK",
+            "cvssv2_accessComplexity" : "MEDIUM",
+            "cvssv2_authenticationr" : "NONE",
+            "cvssv2_confidentialImpact" : "$enc.json($rule.cvssv2ConfidentialityImpact)",
+            "cvssv2_integrityImpact" : "PARTIAL",
+            "cvssv2_availabilityImpact" : "PARTIAL",
+            "cvssv2_severity" : "MEDIUM",
+            "cvssv3_baseScore" : 8.1,
+            "cvssv3_attackVector" : "NETWORK",
+            "cvssv3_attackComplexity" : "HIGH",
+            "cvssv3_privilegesRequired" : "NONE",
+            "cvssv3_userInteraction" : "NONE",
+            "cvssv3_scope" : "UNCHANGED",
+            "cvssv3_confidentialityImpact" : "HIGH",
+            "cvssv3_integrityImpact" : "HIGH",
+            "cvssv3_availabilityImpact" : "HIGH",
+            "cvssv3_baseSeverity" : "HIGH",
+            "cvssv3_exploitabilityScore" : "2.2",
+            "cvssv3_impactScore" : "5.9",
+            "cvssv3_version" : "3.1",
+            "source" : "NVD"
+          }
+        }, {
+          "id" : "CVE-2021-23463",
+          "shortDescription" : {
+            "text" : "CRITICAL severity - CWE-611 Improper Restriction of XML External Entity Reference ('XXE') vulnerability in  in pkg:maven/com.h2database/h2@1.4.196"
+          },
+          "fullDescription" : {
+            "text" : "The package com.h2database:h2 from 1.4.198 and before 2.0.202 are vulnerable to XML External Entity (XXE) Injection via the org.h2.jdbc.JdbcSQLXML class object, when it receives parsed string data from org.h2.jdbc.JdbcResultSet.getSQLXML() method. If it executes the getSource() method when the parameter is DOMSource.class it will trigger the vulnerability."
+          },
+          "properties" : {
+            "cvssv2_score" : 6.4,
+            "cvssv2_accessVector" : "NETWORK",
+            "cvssv2_accessComplexity" : "LOW",
+            "cvssv2_authenticationr" : "NONE",
+            "cvssv2_confidentialImpact" : "$enc.json($rule.cvssv2ConfidentialityImpact)",
+            "cvssv2_integrityImpact" : "NONE",
+            "cvssv2_availabilityImpact" : "PARTIAL",
+            "cvssv2_severity" : "MEDIUM",
+            "cvssv3_baseScore" : 9.1,
+            "cvssv3_attackVector" : "NETWORK",
+            "cvssv3_attackComplexity" : "LOW",
+            "cvssv3_privilegesRequired" : "NONE",
+            "cvssv3_userInteraction" : "NONE",
+            "cvssv3_scope" : "UNCHANGED",
+            "cvssv3_confidentialityImpact" : "HIGH",
+            "cvssv3_integrityImpact" : "NONE",
+            "cvssv3_availabilityImpact" : "HIGH",
+            "cvssv3_baseSeverity" : "CRITICAL",
+            "cvssv3_exploitabilityScore" : "3.9",
+            "cvssv3_impactScore" : "5.2",
+            "cvssv3_version" : "3.1",
+            "source" : "NVD"
+          }
+        }, {
+          "id" : "CVE-2020-36182",
+          "shortDescription" : {
+            "text" : "HIGH severity - CWE-502 Deserialization of Untrusted Data vulnerability in  in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+          },
+          "fullDescription" : {
+            "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.tomcat.dbcp.dbcp2.cpdsadapter.DriverAdapterCPDS."
+          },
+          "properties" : {
+            "cvssv2_score" : 6.8,
+            "cvssv2_accessVector" : "NETWORK",
+            "cvssv2_accessComplexity" : "MEDIUM",
+            "cvssv2_authenticationr" : "NONE",
+            "cvssv2_confidentialImpact" : "$enc.json($rule.cvssv2ConfidentialityImpact)",
+            "cvssv2_integrityImpact" : "PARTIAL",
+            "cvssv2_availabilityImpact" : "PARTIAL",
+            "cvssv2_severity" : "MEDIUM",
+            "cvssv3_baseScore" : 8.1,
+            "cvssv3_attackVector" : "NETWORK",
+            "cvssv3_attackComplexity" : "HIGH",
+            "cvssv3_privilegesRequired" : "NONE",
+            "cvssv3_userInteraction" : "NONE",
+            "cvssv3_scope" : "UNCHANGED",
+            "cvssv3_confidentialityImpact" : "HIGH",
+            "cvssv3_integrityImpact" : "HIGH",
+            "cvssv3_availabilityImpact" : "HIGH",
+            "cvssv3_baseSeverity" : "HIGH",
+            "cvssv3_exploitabilityScore" : "2.2",
+            "cvssv3_impactScore" : "5.9",
+            "cvssv3_version" : "3.1",
+            "source" : "NVD"
+          }
+        }, {
+          "id" : "CVE-2020-36185",
+          "shortDescription" : {
+            "text" : "HIGH severity - CWE-502 Deserialization of Untrusted Data vulnerability in  in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+          },
+          "fullDescription" : {
+            "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.tomcat.dbcp.dbcp2.datasources.SharedPoolDataSource."
+          },
+          "properties" : {
+            "cvssv2_score" : 6.8,
+            "cvssv2_accessVector" : "NETWORK",
+            "cvssv2_accessComplexity" : "MEDIUM",
+            "cvssv2_authenticationr" : "NONE",
+            "cvssv2_confidentialImpact" : "$enc.json($rule.cvssv2ConfidentialityImpact)",
+            "cvssv2_integrityImpact" : "PARTIAL",
+            "cvssv2_availabilityImpact" : "PARTIAL",
+            "cvssv2_severity" : "MEDIUM",
+            "cvssv3_baseScore" : 8.1,
+            "cvssv3_attackVector" : "NETWORK",
+            "cvssv3_attackComplexity" : "HIGH",
+            "cvssv3_privilegesRequired" : "NONE",
+            "cvssv3_userInteraction" : "NONE",
+            "cvssv3_scope" : "UNCHANGED",
+            "cvssv3_confidentialityImpact" : "HIGH",
+            "cvssv3_integrityImpact" : "HIGH",
+            "cvssv3_availabilityImpact" : "HIGH",
+            "cvssv3_baseSeverity" : "HIGH",
+            "cvssv3_exploitabilityScore" : "2.2",
+            "cvssv3_impactScore" : "5.9",
+            "cvssv3_version" : "3.1",
+            "source" : "NVD"
+          }
+        }, {
+          "id" : "CVE-2020-35491",
+          "shortDescription" : {
+            "text" : "HIGH severity - CWE-502 Deserialization of Untrusted Data vulnerability in  in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+          },
+          "fullDescription" : {
+            "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.commons.dbcp2.datasources.SharedPoolDataSource."
+          },
+          "properties" : {
+            "cvssv2_score" : 6.8,
+            "cvssv2_accessVector" : "NETWORK",
+            "cvssv2_accessComplexity" : "MEDIUM",
+            "cvssv2_authenticationr" : "NONE",
+            "cvssv2_confidentialImpact" : "$enc.json($rule.cvssv2ConfidentialityImpact)",
+            "cvssv2_integrityImpact" : "PARTIAL",
+            "cvssv2_availabilityImpact" : "PARTIAL",
+            "cvssv2_severity" : "MEDIUM",
+            "cvssv3_baseScore" : 8.1,
+            "cvssv3_attackVector" : "NETWORK",
+            "cvssv3_attackComplexity" : "HIGH",
+            "cvssv3_privilegesRequired" : "NONE",
+            "cvssv3_userInteraction" : "NONE",
+            "cvssv3_scope" : "UNCHANGED",
+            "cvssv3_confidentialityImpact" : "HIGH",
+            "cvssv3_integrityImpact" : "HIGH",
+            "cvssv3_availabilityImpact" : "HIGH",
+            "cvssv3_baseSeverity" : "HIGH",
+            "cvssv3_exploitabilityScore" : "2.2",
+            "cvssv3_impactScore" : "5.9",
+            "cvssv3_version" : "3.1",
+            "source" : "NVD"
+          }
+        }, {
+          "id" : "CVE-2020-36184",
+          "shortDescription" : {
+            "text" : "HIGH severity - CWE-502 Deserialization of Untrusted Data vulnerability in  in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+          },
+          "fullDescription" : {
+            "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.tomcat.dbcp.dbcp2.datasources.PerUserPoolDataSource."
+          },
+          "properties" : {
+            "cvssv2_score" : 6.8,
+            "cvssv2_accessVector" : "NETWORK",
+            "cvssv2_accessComplexity" : "MEDIUM",
+            "cvssv2_authenticationr" : "NONE",
+            "cvssv2_confidentialImpact" : "$enc.json($rule.cvssv2ConfidentialityImpact)",
+            "cvssv2_integrityImpact" : "PARTIAL",
+            "cvssv2_availabilityImpact" : "PARTIAL",
+            "cvssv2_severity" : "MEDIUM",
+            "cvssv3_baseScore" : 8.1,
+            "cvssv3_attackVector" : "NETWORK",
+            "cvssv3_attackComplexity" : "HIGH",
+            "cvssv3_privilegesRequired" : "NONE",
+            "cvssv3_userInteraction" : "NONE",
+            "cvssv3_scope" : "UNCHANGED",
+            "cvssv3_confidentialityImpact" : "HIGH",
+            "cvssv3_integrityImpact" : "HIGH",
+            "cvssv3_availabilityImpact" : "HIGH",
+            "cvssv3_baseSeverity" : "HIGH",
+            "cvssv3_exploitabilityScore" : "2.2",
+            "cvssv3_impactScore" : "5.9",
+            "cvssv3_version" : "3.1",
+            "source" : "NVD"
+          }
+        }, {
+          "id" : "CVE-2020-36187",
+          "shortDescription" : {
+            "text" : "HIGH severity - CWE-502 Deserialization of Untrusted Data vulnerability in  in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+          },
+          "fullDescription" : {
+            "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.tomcat.dbcp.dbcp.datasources.SharedPoolDataSource."
+          },
+          "properties" : {
+            "cvssv2_score" : 6.8,
+            "cvssv2_accessVector" : "NETWORK",
+            "cvssv2_accessComplexity" : "MEDIUM",
+            "cvssv2_authenticationr" : "NONE",
+            "cvssv2_confidentialImpact" : "$enc.json($rule.cvssv2ConfidentialityImpact)",
+            "cvssv2_integrityImpact" : "PARTIAL",
+            "cvssv2_availabilityImpact" : "PARTIAL",
+            "cvssv2_severity" : "MEDIUM",
+            "cvssv3_baseScore" : 8.1,
+            "cvssv3_attackVector" : "NETWORK",
+            "cvssv3_attackComplexity" : "HIGH",
+            "cvssv3_privilegesRequired" : "NONE",
+            "cvssv3_userInteraction" : "NONE",
+            "cvssv3_scope" : "UNCHANGED",
+            "cvssv3_confidentialityImpact" : "HIGH",
+            "cvssv3_integrityImpact" : "HIGH",
+            "cvssv3_availabilityImpact" : "HIGH",
+            "cvssv3_baseSeverity" : "HIGH",
+            "cvssv3_exploitabilityScore" : "2.2",
+            "cvssv3_impactScore" : "5.9",
+            "cvssv3_version" : "3.1",
+            "source" : "NVD"
+          }
+        }, {
+          "id" : "CVE-2020-36186",
+          "shortDescription" : {
+            "text" : "HIGH severity - CWE-502 Deserialization of Untrusted Data vulnerability in  in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+          },
+          "fullDescription" : {
+            "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.tomcat.dbcp.dbcp.datasources.PerUserPoolDataSource."
+          },
+          "properties" : {
+            "cvssv2_score" : 6.8,
+            "cvssv2_accessVector" : "NETWORK",
+            "cvssv2_accessComplexity" : "MEDIUM",
+            "cvssv2_authenticationr" : "NONE",
+            "cvssv2_confidentialImpact" : "$enc.json($rule.cvssv2ConfidentialityImpact)",
+            "cvssv2_integrityImpact" : "PARTIAL",
+            "cvssv2_availabilityImpact" : "PARTIAL",
+            "cvssv2_severity" : "MEDIUM",
+            "cvssv3_baseScore" : 8.1,
+            "cvssv3_attackVector" : "NETWORK",
+            "cvssv3_attackComplexity" : "HIGH",
+            "cvssv3_privilegesRequired" : "NONE",
+            "cvssv3_userInteraction" : "NONE",
+            "cvssv3_scope" : "UNCHANGED",
+            "cvssv3_confidentialityImpact" : "HIGH",
+            "cvssv3_integrityImpact" : "HIGH",
+            "cvssv3_availabilityImpact" : "HIGH",
+            "cvssv3_baseSeverity" : "HIGH",
+            "cvssv3_exploitabilityScore" : "2.2",
+            "cvssv3_impactScore" : "5.9",
+            "cvssv3_version" : "3.1",
+            "source" : "NVD"
+          }
+        } ],
+        "properties" : {
+          "disclaimer" : "Dependency-Check is an open source tool performing a best effort analysis of 3rd party dependencies; false positives and false negatives may exist in the analysis performed by the tool. Use of the tool and the reporting provided constitutes acceptance for use in an AS IS condition, and there are NO warranties, implied or otherwise, with regard to the analysis or its use. Any use of the tool and the reporting provided is at the user's risk. In no event shall the copyright holder or OWASP be held liable for any damages whatsoever arising out of or in connection with the use of this tool, the analysis performed, or the resulting report.",
+          "nvd" : "This report contains data retrieved from the National Vulnerability Database: http://nvd.nist.gov",
+          "npm" : "This report may contain data retrieved from the NPM Public Advisories: https://www.npmjs.com/advisories",
+          "retirejs" : "This report may contain data retrieved from the RetireJS community: https://retirejs.github.io/retire.js/",
+          "ossindex" : "This report may contain data retrieved from the Sonatype OSS Index: https://ossindex.sonatype.org",
+          "NVD CVE Checked" : "2022-01-17T06:55:21",
+          "NVD CVE Modified" : "2022-01-17T06:00:01",
+          "VersionCheckOn" : "2022-01-05T05:58:22"
+        }
+      }
+    },
+    "artifacts" : [ {
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.18/animal-sniffer-annotations-1.18.jar"
+      },
+      "hashes" : {
+        "md5" : "f0a84f9b30590b3aa76edc893d6fe4ff",
+        "sha1" : "f7aa683ea79dc6681ee9fb95756c999acbb62f5d",
+        "sha256" : "47f05852b48ee9baefef80fa3d8cea60efa4753c0013121dd7fe5eef2e5c729d"
+      },
+      "properties" : {
+        "id1" : "pkg:maven/org.codehaus.mojo/animal-sniffer-annotations@1.18"
+      }
+    }, {
+      "description" : {
+        "text" : "\n        Checker Qual is the set of annotations (qualifiers) and supporting classes\n        used by the Checker Framework to type check Java source code.  Please\n        see artifact:\n        org.checkerframework:checker\n    "
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/org/checkerframework/checker-qual/2.8.1/checker-qual-2.8.1.jar"
+      },
+      "hashes" : {
+        "md5" : "e1c060246b024c4f260c6904e55a62a3",
+        "sha1" : "eb2e8ab75598548cc8acf9a1ca227e480e01881e",
+        "sha256" : "9103499008bcecd4e948da29b17864abb64304e15706444ae209d17ebe0575df"
+      },
+      "properties" : {
+        "license" : "The MIT License: http://opensource.org/licenses/MIT",
+        "id2" : "pkg:maven/org.checkerframework/checker-qual@2.8.1"
+      }
+    }, {
+      "description" : {
+        "text" : "Types that extend and augment the Java Collections Framework."
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar"
+      },
+      "hashes" : {
+        "md5" : "f54a8510f834a1a57166970bfc982e94",
+        "sha1" : "8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5",
+        "sha256" : "eeeae917917144a68a741d4c0dff66aa5c5c5fd85593ff217bced3fc8ca783b8"
+      },
+      "properties" : {
+        "license" : "http://www.apache.org/licenses/LICENSE-2.0.txt",
+        "id3" : "pkg:maven/commons-collections/commons-collections@3.2.2",
+        "vid1" : "cpe:2.3:a:apache:commons_collections:3.2.2:*:*:*:*:*:*:*"
+      }
+    }, {
+      "description" : {
+        "text" : "\nApache Commons Compress software defines an API for working with\ncompression and archive formats.  These include: bzip2, gzip, pack200,\nlzma, xz, Snappy, traditional Unix Compress, DEFLATE, DEFLATE64, LZ4,\nBrotli, Zstandard and ar, cpio, jar, tar, zip, dump, 7z, arj.\n  "
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar"
+      },
+      "hashes" : {
+        "md5" : "fe897bced43468450b785b66c1cff455",
+        "sha1" : "7e65777fb451ddab6a9c054beb879e521b7eab78",
+        "sha256" : "ff2d59fad74e867630fbc7daab14c432654712ac624dbee468d220677b124dd5"
+      },
+      "properties" : {
+        "license" : "https://www.apache.org/licenses/LICENSE-2.0.txt",
+        "id4" : "pkg:maven/org.apache.commons/commons-compress@1.19",
+        "vid2" : "cpe:2.3:a:apache:commons_compress:1.19:*:*:*:*:*:*:*"
+      }
+    }, {
+      "description" : {
+        "text" : "\nThe Apache Commons IO library contains utility classes, stream implementations, file filters,\nfile comparators, endian transformation classes, and much more.\n  "
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar"
+      },
+      "hashes" : {
+        "md5" : "467c2a1f64319c99b5faf03fc78572af",
+        "sha1" : "815893df5f31da2ece4040fe0a12fd44b577afaf",
+        "sha256" : "f877d304660ac2a142f3865badfc971dec7ed73c747c7f8d5d2f5139ca736513"
+      },
+      "properties" : {
+        "license" : "https://www.apache.org/licenses/LICENSE-2.0.txt",
+        "id5" : "pkg:maven/commons-io/commons-io@2.6",
+        "vid3" : "cpe:2.3:a:apache:commons_io:2.6:*:*:*:*:*:*:*"
+      }
+    }, {
+      "description" : {
+        "text" : "Apache Commons JCS is a distributed, versatile caching system."
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/org/apache/commons/commons-jcs-core/2.2.1/commons-jcs-core-2.2.1.jar"
+      },
+      "hashes" : {
+        "md5" : "fd41b509c3853faf088e5c340402d609",
+        "sha1" : "3ffac1956b0d88fff8adefdf1e68d69cfe296191",
+        "sha256" : "7f98edf1e69b32137a2181722dadd1220f61d184414df17061a0e10e40535a2d"
+      },
+      "properties" : {
+        "license" : "https://www.apache.org/licenses/LICENSE-2.0.txt",
+        "id6" : "pkg:maven/org.apache.commons/commons-jcs-core@2.2.1"
+      }
+    }, {
+      "description" : {
+        "text" : "\n  Apache Commons Lang, a package of Java utility classes for the\n  classes that are in java.lang's hierarchy, or are considered to be so\n  standard as to justify existence in java.lang.\n  "
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar"
+      },
+      "hashes" : {
+        "md5" : "8667a442ee77e509fbe8176b94726eb2",
+        "sha1" : "5fe28b9518e58819180a43a850fbc0dd24b7c050",
+        "sha256" : "734c8356420cc8e30c795d64fd1fcd5d44ea9d90342a2cc3262c5158fbc6d98b"
+      },
+      "properties" : {
+        "license" : "http://www.apache.org/licenses/LICENSE-2.0.txt",
+        "id7" : "pkg:maven/org.apache.commons/commons-lang3@3.4"
+      }
+    }, {
+      "description" : {
+        "text" : "Apache Commons Logging is a thin adapter allowing configurable bridging to other,\n    well known logging systems."
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar"
+      },
+      "hashes" : {
+        "md5" : "040b4b4d8eac886f6b4a2a3bd2f31b00",
+        "sha1" : "4bfc12adfe4842bf07b657f0369c4cb522955686",
+        "sha256" : "daddea1ea0be0f56978ab3006b8ac92834afeefbd9b7e4e6316fca57df0fa636"
+      },
+      "properties" : {
+        "license" : "http://www.apache.org/licenses/LICENSE-2.0.txt",
+        "id8" : "pkg:maven/commons-logging/commons-logging@1.2"
+      }
+    }, {
+      "description" : {
+        "text" : "Apache Commons Text is a library focused on algorithms working on strings."
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/org/apache/commons/commons-text/1.8/commons-text-1.8.jar"
+      },
+      "hashes" : {
+        "md5" : "f2243d67b348e7175f55902cdb7e54af",
+        "sha1" : "879a6bde4c0537a25504c72ec7a94ba4099f469c",
+        "sha256" : "6fe7ad4ad5349d6b77e7a0e1c9f6037108a1ee48c42e7e6eb4b18f56d324f7b2"
+      },
+      "properties" : {
+        "license" : "https://www.apache.org/licenses/LICENSE-2.0.txt",
+        "id9" : "pkg:maven/org.apache.commons/commons-text@1.8"
+      }
+    }, {
+      "description" : {
+        "text" : "Implementation of mustache.js for Java"
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/com/github/spullara/mustache/java/compiler/0.8.17/compiler-0.8.17.jar"
+      },
+      "hashes" : {
+        "md5" : "e0e52f6ea100529dfb5f1e6ea54e72b4",
+        "sha1" : "50a290cf88e5981653796573c97fba1e0071ef07",
+        "sha256" : "2b1ece537f09457a459a256d3ddd434beec8077c19db9842e7f079acf8e7dd51"
+      },
+      "properties" : {
+        "license" : "Apache License 2.0: http://www.apache.org/licenses/LICENSE-2.0",
+        "id10" : "pkg:maven/com.github.spullara.mustache.java/compiler@0.8.17"
+      }
+    }, {
+      "description" : {
+        "text" : "A utility for validating and parsing Common Platform Enumeration (CPE) v2.2 and v2.3 as originally defined by MITRE and maintained by NIST."
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/us/springett/cpe-parser/2.0.1/cpe-parser-2.0.1.jar"
+      },
+      "hashes" : {
+        "md5" : "f5914901fb201b0f555806c0490d0c7e",
+        "sha1" : "bed94a84a8cea2347e6b5049fc92b52f0af6f91b",
+        "sha256" : "696233733023bfc1944887a31476cde9c47847f45b0d76b0d8644c0ef3483251"
+      },
+      "properties" : {
+        "license" : "Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0.txt",
+        "id11" : "pkg:maven/us.springett/cpe-parser@2.0.1"
+      }
+    }, {
+      "description" : {
+        "text" : "dependency-check-core is the engine and reporting tool used to identify and report if there are any known, publicly disclosed vulnerabilities in the scanned project's dependencies. The engine extracts meta-data from the dependencies and uses this to do fuzzy key-word matching against the Common Platfrom Enumeration (CPE), if any CPE identifiers are found the associated Common Vulnerability and Exposure (CVE) entries are added to the generated report."
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/org/owasp/dependency-check-core/5.2.3/dependency-check-core-5.2.3.jar"
+      },
+      "hashes" : {
+        "md5" : "4517b4ec029f78aafd82d274dadca001",
+        "sha1" : "c5d75202f329c4fc1b7505b06a04cf2d9aac209f",
+        "sha256" : "4125d6da0adc471da3da76538e385bef74e443c066b6e3e71b2862d8c443f800"
+      },
+      "properties" : {
+        "id12" : "pkg:maven/org.owasp/dependency-check-core@5.2.3",
+        "vid4" : "cpe:2.3:a:owasp:dependency-check:5.2.3:*:*:*:*:*:*:*"
+      }
+    }, {
+      "description" : {
+        "text" : "GrokAssembly\n\nInspects a .NET Assembly to determine Company, Product, and Version information"
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/org/owasp/dependency-check-core/5.2.3/dependency-check-core-5.2.3.jar/GrokAssembly.zip/GrokAssembly.dll"
+      },
+      "hashes" : {
+        "md5" : "3436d483f09388fe16d1c559dd331574",
+        "sha1" : "31acefe2e2ae79bdea3622385c6af63ae2de18ed",
+        "sha256" : "662b0c74b1a87c2ac5861f238a47f08a7c1d2e6ab79ea104baec8680110aba1d"
+      },
+      "properties" : { }
+    }, {
+      "description" : {
+        "text" : "System.Collections.Immutable\n\nSystem.Collections.Immutable"
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/org/owasp/dependency-check-core/5.2.3/dependency-check-core-5.2.3.jar/GrokAssembly.zip/System.Collections.Immutable.dll"
+      },
+      "hashes" : {
+        "md5" : "d8203aedaabeac1e606cd0e2af397d01",
+        "sha1" : "eef943e4369166a039dee90f2d81504613d49ca0",
+        "sha256" : "2f05a2c489c2d30a6cca346d4ce184323d70eb4f5afa6bed34d5800274444e57"
+      },
+      "properties" : {
+        "id13" : "pkg:generic/System.Collections.Immutable@4.6.26515.06"
+      }
+    }, {
+      "description" : {
+        "text" : "System.Reflection.Metadata\n\nSystem.Reflection.Metadata"
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/org/owasp/dependency-check-core/5.2.3/dependency-check-core-5.2.3.jar/GrokAssembly.zip/System.Reflection.Metadata.dll"
+      },
+      "hashes" : {
+        "md5" : "5e6125aa4a7c0ca54f73a9e6833ef404",
+        "sha1" : "303d712269ebbaac476f8b6db4472bd2464bd3ce",
+        "sha256" : "2e180767f1415cb5bbed14450e1d4003cf56a9da6aeaf91ce969a4b9d2a54314"
+      },
+      "properties" : {
+        "id14" : "pkg:generic/System.Reflection.Metadata@4.6.26515.06"
+      }
+    }, {
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.2/error_prone_annotations-2.3.2.jar"
+      },
+      "hashes" : {
+        "md5" : "42c8312a7eb4b6ff612049c4f7b514a6",
+        "sha1" : "d1a0c5032570e0f64be6b4d9c90cdeb103129029",
+        "sha256" : "357cd6cfb067c969226c442451502aee13800a24e950fdfde77bcdb4565a668d"
+      },
+      "properties" : {
+        "license" : "Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0.txt",
+        "id15" : "pkg:maven/com.google.errorprone/error_prone_annotations@2.3.2"
+      }
+    }, {
+      "description" : {
+        "text" : "\n    Contains\n    com.google.common.util.concurrent.internal.InternalFutureFailureAccess and\n    InternalFutures. Most users will never need to use this artifact. Its\n    classes is conceptually a part of Guava, but they're in this separate\n    artifact so that Android libraries can use them without pulling in all of\n    Guava (just as they can use ListenableFuture by depending on the\n    listenablefuture artifact).\n  "
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar"
+      },
+      "hashes" : {
+        "md5" : "091883993ef5bfa91da01dcc8fc52236",
+        "sha1" : "1dcf1de382a0bf95a3d8b0849546c88bac1292c9",
+        "sha256" : "a171ee4c734dd2da837e4b16be9df4661afab72a41adaf31eb84dfdaf936ca26"
+      },
+      "properties" : {
+        "license" : "http://www.apache.org/licenses/LICENSE-2.0.txt",
+        "id16" : "pkg:maven/com.google.guava/failureaccess@1.0.1"
+      }
+    }, {
+      "description" : {
+        "text" : "Gson JSON library"
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar"
+      },
+      "hashes" : {
+        "md5" : "089104cb90d8b4e1aa00b1f5faef0742",
+        "sha1" : "f645ed69d595b24d4cf8b3fbb64cc505bede8829",
+        "sha256" : "233a0149fc365c9f6edbd683cfe266b19bdc773be98eabdaf6b3c924b48e7d81"
+      },
+      "properties" : {
+        "id17" : "pkg:maven/com.google.code.gson/gson@2.8.5"
+      }
+    }, {
+      "description" : {
+        "text" : "\n    Guava is a suite of core and expanded libraries that include\n    utility classes, google's collections, io classes, and much\n    much more.\n  "
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/com/google/guava/guava/28.1-jre/guava-28.1-jre.jar"
+      },
+      "hashes" : {
+        "md5" : "4faae794936faf441fcb7afb2c7db507",
+        "sha1" : "b0e91dcb6a44ffb6221b5027e12a5cb34b841145",
+        "sha256" : "30beb8b8527bd07c6e747e77f1a92122c2f29d57ce347461a4a55eb26e382da4"
+      },
+      "properties" : {
+        "license" : "http://www.apache.org/licenses/LICENSE-2.0.txt",
+        "id18" : "pkg:maven/com.google.guava/guava@28.1-jre",
+        "vid5" : "cpe:2.3:a:google:guava:28.1:*:*:*:*:*:*:*"
+      }
+    }, {
+      "description" : {
+        "text" : "H2 Database Engine"
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/com/h2database/h2/1.4.196/h2-1.4.196.jar"
+      },
+      "hashes" : {
+        "md5" : "4ce376a2466f5b29573fc3e40606af6b",
+        "sha1" : "dd0034398d593aa3588c6773faac429bbd9aea0e",
+        "sha256" : "0a05f4a0d5b85840148aadce63a423b5d3c36ef44756389b4faad08d2733faf5"
+      },
+      "properties" : {
+        "license" : "MPL 2.0 or EPL 1.0: http://h2database.com/html/license.html",
+        "id19" : "pkg:maven/com.h2database/h2@1.4.196",
+        "vid6" : "cpe:2.3:a:h2database:h2:1.4.196:*:*:*:*:*:*:*"
+      }
+    }, {
+      "description" : {
+        "text" : "\n    A set of annotations that provide additional information to the J2ObjC\n    translator to modify the result of translation.\n  "
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar"
+      },
+      "hashes" : {
+        "md5" : "5fa4ec4ec0c5aa70af8a7d4922df1931",
+        "sha1" : "ba035118bc8bac37d7eff77700720999acd9986d",
+        "sha256" : "21af30c92267bd6122c0e0b4d20cccb6641a37eaf956c6540ec471d584e64a7b"
+      },
+      "properties" : {
+        "license" : "The Apache Software License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0.txt",
+        "id20" : "pkg:maven/com.google.j2objc/j2objc-annotations@1.3"
+      }
+    }, {
+      "description" : {
+        "text" : "Core Jackson processing abstractions (aka Streaming API), implementation for JSON"
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.10/jackson-core-2.9.10.jar"
+      },
+      "hashes" : {
+        "md5" : "d62d9b1d1d83dd553e678bc8fce8f809",
+        "sha1" : "66b715dec9dd8b0f39f3296e67e05913bf422d0c",
+        "sha256" : "65fe26d7554a4409652c86ee38f2e94bc42934326d88b3c78c61f66ff2222c53"
+      },
+      "properties" : {
+        "license" : "http://www.apache.org/licenses/LICENSE-2.0.txt",
+        "id21" : "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.9.10",
+        "vid7" : "cpe:2.3:a:fasterxml:jackson-modules-java8:2.9.10:*:*:*:*:*:*:*"
+      }
+    }, {
+      "description" : {
+        "text" : "General data-binding functionality for Jackson: works on core streaming API"
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar"
+      },
+      "hashes" : {
+        "md5" : "60dbcee98a652dff452f1fe23b10f228",
+        "sha1" : "caa7f72b6b488e827cb2c8d72615fc8a53176e47",
+        "sha256" : "cd99bf005d7f319b74fdbf00b40ba61ee47d341f64f27e2873fad908d266971e"
+      },
+      "properties" : {
+        "license" : "http://www.apache.org/licenses/LICENSE-2.0.txt",
+        "id22" : "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7",
+        "vid8" : "cpe:2.3:a:fasterxml:jackson-databind:2.9.10.7:*:*:*:*:*:*:*",
+        "vid9" : "cpe:2.3:a:fasterxml:jackson-modules-java8:2.9.10.7:*:*:*:*:*:*:*"
+      }
+    }, {
+      "description" : {
+        "text" : "JavaBeans Activation Framework"
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/com/sun/activation/jakarta.activation/1.2.1/jakarta.activation-1.2.1.jar"
+      },
+      "hashes" : {
+        "md5" : "dc519b1f09bbaf9274ea5da358a00110",
+        "sha1" : "8013606426a73d8ba6b568370877251e91a38b89",
+        "sha256" : "d84d4ba8b55cdb7fdcbb885e6939386367433f56f5ab8cfdc302a7c3587fa92b"
+      },
+      "properties" : {
+        "license" : "http://www.eclipse.org/org/documents/edl-v10.php",
+        "id23" : "pkg:maven/com.sun.activation/jakarta.activation@1.2.1"
+      }
+    }, {
+      "description" : {
+        "text" : "The javax.inject API"
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar"
+      },
+      "hashes" : {
+        "md5" : "289075e48b909e9e74e6c915b3631d2e",
+        "sha1" : "6975da39a7040257bd51d21a231b76c915872d38",
+        "sha256" : "91c77044a50c481636c32d916fd89c9118a72195390452c81065080f957de7ff"
+      },
+      "properties" : {
+        "license" : "The Apache Software License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0.txt",
+        "id24" : "pkg:maven/javax.inject/javax.inject@1"
+      }
+    }, {
+      "description" : {
+        "text" : "Default provider for JSR 353:Java API for Processing JSON"
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.jar"
+      },
+      "hashes" : {
+        "md5" : "569870f975deeeb6691fcb9bc02a9555",
+        "sha1" : "3178f73569fd7a1e5ffc464e680f7a8cc784b85a",
+        "sha256" : "0e1dec40a1ede965941251eda968aeee052cc4f50378bc316cc48e8159bdbeb4"
+      },
+      "properties" : {
+        "license" : "https://glassfish.java.net/public/CDDL+GPL_1_1.html",
+        "id25" : "pkg:maven/org.glassfish/javax.json@1.0.4"
+      }
+    }, {
+      "description" : {
+        "text" : "Java API for RESTful Web Services (JAX-RS)"
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar"
+      },
+      "hashes" : {
+        "md5" : "edcd111cf4d3ba8ac8e1f326efc37a17",
+        "sha1" : "104e9c2b5583cfcfeac0402316221648d6d8ea6b",
+        "sha256" : "38607d626f2288d8fbc1b1f8a62c369e63806d9a313ac7cbc5f9d6c94f4b466d"
+      },
+      "properties" : {
+        "license" : "CDDL 1.1: http://glassfish.java.net/public/CDDL+GPL_1_1.html\nGPL2 w/ CPE: http://glassfish.java.net/public/CDDL+GPL_1_1.html",
+        "id26" : "pkg:maven/javax.ws.rs/javax.ws.rs-api@2.0.1",
+        "vid10" : "cpe:2.3:a:oracle:web_services:2.0.1:*:*:*:*:*:*:*"
+      }
+    }, {
+      "description" : {
+        "text" : "JCL 1.1.1 implemented over SLF4J"
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.15/jcl-over-slf4j-1.7.15.jar"
+      },
+      "hashes" : {
+        "md5" : "ec012970331eea95119fe69cfc2719c4",
+        "sha1" : "598ffdd2f61d99a0244d095b96f3cb9c48b0cb8a",
+        "sha256" : "1faeb66c0b69e7d75369ca48fc1ce4b84c8b66c1f8610b5fd060ad46d53a6e01"
+      },
+      "properties" : {
+        "id27" : "pkg:maven/org.slf4j/jcl-over-slf4j@1.7.15"
+      }
+    }, {
+      "description" : {
+        "text" : "Date and time library to replace JDK date handling"
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/joda-time/joda-time/2.9.9/joda-time-2.9.9.jar"
+      },
+      "hashes" : {
+        "md5" : "eca438c8cc2b1de38e28d884b7f15dbc",
+        "sha1" : "f7b520c458572890807d143670c9b24f4de90897",
+        "sha256" : "b049a43c1057942e6acfbece008e4949b2e35d1658d0c8e06f4485397e2fa4e7"
+      },
+      "properties" : {
+        "license" : "Apache 2: http://www.apache.org/licenses/LICENSE-2.0.txt",
+        "id28" : "pkg:maven/joda-time/joda-time@2.9.9",
+        "vid11" : "cpe:2.3:a:time_project:time:2.9.9:*:*:*:*:*:*:*"
+      }
+    }, {
+      "description" : {
+        "text" : "\n\t\tJSON is a light-weight, language independent, data interchange format.\n\t\tSee http://www.JSON.org/\n\n\t\tThe files in this package implement JSON encoders/decoders in Java.\n\t\tIt also includes the capability to convert between JSON and XML, HTTP\n\t\theaders, Cookies, and CDL.\n\n\t\tThis is a reference implementation. There is a large number of JSON packages\n\t\tin Java. Perhaps someday the Java community will standardize on one. Until\n\t\tthen, choose carefully.\n\n\t\tThe license includes this restriction: \"The software shall be used for good,\n\t\tnot evil.\" If your conscience cannot live with that, then choose a different\n\t\tpackage.\n\n\t\tThe package compiles on Java 1.2 thru Java 1.4.\n\t"
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/org/json/json/20140107/json-20140107.jar"
+      },
+      "hashes" : {
+        "md5" : "8ca2437d3dbbaa2e76195adedfd901f4",
+        "sha1" : "d1ffca6e2482b002702c6a576166fd685e3370e3",
+        "sha256" : "8e5aa0a368bee60347b5a4ad861d9f68c7793f60deeea89efd449eb70d5ae622"
+      },
+      "properties" : {
+        "license" : "The JSON License: http://json.org/license.html",
+        "id29" : "pkg:maven/org.json/json@20140107"
+      }
+    }, {
+      "description" : {
+        "text" : "jsoup is a Java library for working with real-world HTML. It provides a very convenient API for extracting and manipulating data, using the best of DOM, CSS, and jquery-like methods. jsoup implements the WHATWG HTML5 specification, and parses HTML to the same DOM as modern browsers do."
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/org/jsoup/jsoup/1.12.1/jsoup-1.12.1.jar"
+      },
+      "hashes" : {
+        "md5" : "79bb9e9e8b50ef80a18bd46426befc5a",
+        "sha1" : "55819a28fc834c2f2bcf4dcdb278524dc3cf088f",
+        "sha256" : "4f961f68e47740dd7576c9685774a7b25b92f1017af24e2f707b30e893abade3"
+      },
+      "properties" : {
+        "license" : "The MIT License: https://jsoup.org/license",
+        "id30" : "pkg:maven/org.jsoup/jsoup@1.12.1",
+        "vid12" : "cpe:2.3:a:jsoup:jsoup:1.12.1:*:*:*:*:*:*:*"
+      }
+    }, {
+      "description" : {
+        "text" : "JSR305 Annotations for Findbugs"
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar"
+      },
+      "hashes" : {
+        "md5" : "dd83accb899363c32b07d7a1b2e4ce40",
+        "sha1" : "25ea2e8b0c338a877313bd4672d3fe056ea78f0d",
+        "sha256" : "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7"
+      },
+      "properties" : {
+        "license" : "The Apache Software License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0.txt",
+        "id31" : "pkg:maven/com.google.code.findbugs/jsr305@3.0.2"
+      }
+    }, {
+      "description" : {
+        "text" : "\n    An empty artifact that Guava depends on to signal that it is providing\n    ListenableFuture -- but is also available in a second \"version\" that\n    contains com.google.common.util.concurrent.ListenableFuture class, without\n    any other Guava classes. The idea is:\n\n    - If users want only ListenableFuture, they depend on listenablefuture-1.0.\n\n    - If users want all of Guava, they depend on guava, which, as of Guava\n    27.0, depends on\n    listenablefuture-9999.0-empty-to-avoid-conflict-with-guava. The 9999.0-...\n    version number is enough for some build systems (notably, Gradle) to select\n    that empty artifact over the \"real\" listenablefuture-1.0 -- avoiding a\n    conflict with the copy of ListenableFuture in guava itself. If users are\n    using an older version of Guava or a build system other than Gradle, they\n    may see class conflicts. If so, they can solve them by manually excluding\n    the listenablefuture artifact or manually forcing their build systems to\n    use 9999.0-....\n  "
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
+      },
+      "hashes" : {
+        "md5" : "d094c22570d65e132c19cea5d352e381",
+        "sha1" : "b421526c5f297295adef1c886e5246c39d4ac629",
+        "sha256" : "b372a037d4230aa57fbeffdef30fd6123f9c0c2db85d0aced00c91b974f33f99"
+      },
+      "properties" : {
+        "id32" : "pkg:maven/com.google.guava/listenablefuture@9999.0-empty-to-avoid-conflict-with-guava"
+      }
+    }, {
+      "description" : {
+        "text" : "Additional Analyzers"
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/org/apache/lucene/lucene-analyzers-common/8.3.0/lucene-analyzers-common-8.3.0.jar"
+      },
+      "hashes" : {
+        "md5" : "53cc0b6bddb488d63e8bec4829eaa43b",
+        "sha1" : "832806ff4af08d32e9974db75b0210c140f375fc",
+        "sha256" : "512c69219a6c0bb6f3bc0d6b2c401214ea57d4d7620147cf605deab341b636c3"
+      },
+      "properties" : {
+        "id33" : "pkg:maven/org.apache.lucene/lucene-analyzers-common@8.3.0"
+      }
+    }, {
+      "description" : {
+        "text" : "Apache Lucene Java Core"
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/org/apache/lucene/lucene-core/8.3.0/lucene-core-8.3.0.jar"
+      },
+      "hashes" : {
+        "md5" : "b92cf4e69bf87d51d8765be830f6a09b",
+        "sha1" : "e98c442fa8b041072d5a5fe2d417d78a8ce46eaf",
+        "sha256" : "680b884a14761324552e292e3b67eb4c1d310c77ccdaec6ddaecb231cbd611dd"
+      },
+      "properties" : {
+        "id34" : "pkg:maven/org.apache.lucene/lucene-core@8.3.0"
+      }
+    }, {
+      "description" : {
+        "text" : "Lucene Queries Module"
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/org/apache/lucene/lucene-queries/8.3.0/lucene-queries-8.3.0.jar"
+      },
+      "hashes" : {
+        "md5" : "b4eb64bde6704602391bb2629e906054",
+        "sha1" : "a2b2cf250d5377da5ee22bb25626bf3e0dc4c5ca",
+        "sha256" : "64aa9551210017c2f6c69e4bbd0e2e96748feac3a20a2fb96324c1542a7ab0b8"
+      },
+      "properties" : {
+        "id35" : "pkg:maven/org.apache.lucene/lucene-queries@8.3.0"
+      }
+    }, {
+      "description" : {
+        "text" : "Lucene QueryParsers module"
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/org/apache/lucene/lucene-queryparser/8.3.0/lucene-queryparser-8.3.0.jar"
+      },
+      "hashes" : {
+        "md5" : "417e585862cb92cb1f818b22c966e1da",
+        "sha1" : "b10ceccf3a3ca92bc3a83d5930cac1244286dc60",
+        "sha256" : "db54e40c330046dc9b5129c0eabce57512cd3fa54a55ff21c28bcd3a2b7c48b3"
+      },
+      "properties" : {
+        "id36" : "pkg:maven/org.apache.lucene/lucene-queryparser@8.3.0"
+      }
+    }, {
+      "description" : {
+        "text" : "Lucene Sandbox"
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/org/apache/lucene/lucene-sandbox/8.3.0/lucene-sandbox-8.3.0.jar"
+      },
+      "hashes" : {
+        "md5" : "035f4cf61d56c08115eff8ef64f2197a",
+        "sha1" : "e381b9095f0946f0328e70216149cb28f0f926b2",
+        "sha256" : "9a70b92b0a5eae9f56b7a586ae414e03e0367ff534ddd547c487ab85ea45e512"
+      },
+      "properties" : {
+        "id37" : "pkg:maven/org.apache.lucene/lucene-sandbox@8.3.0"
+      }
+    }, {
+      "description" : {
+        "text" : "Jakarta Mail API (no providers)"
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/com/sun/mail/mailapi/1.6.4/mailapi-1.6.4.jar"
+      },
+      "hashes" : {
+        "md5" : "292244c91dc51ea679a8ed55d0a5248a",
+        "sha1" : "82d7d21b34a723b487399032556552c12ca0d80c",
+        "sha256" : "8ee9aab3d36f81c517060f9c721dd6b6ec61471f1e425b8947c6e26952d52d83"
+      },
+      "properties" : {
+        "license" : "http://www.eclipse.org/legal/epl-2.0, https://www.gnu.org/software/classpath/license.html, http://www.eclipse.org/org/documents/edl-v10.php",
+        "id38" : "pkg:maven/com.sun.mail/mailapi@1.6.4",
+        "vid13" : "cpe:2.3:a:oracle:java_se:1.6.4:*:*:*:*:*:*:*"
+      }
+    }, {
+      "description" : {
+        "text" : "Minimal overhead Java logging"
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/com/esotericsoftware/minlog/1.3/minlog-1.3.jar"
+      },
+      "hashes" : {
+        "md5" : "b4e9b84eaea9750fe58ac3e196c7ed9b",
+        "sha1" : "8d2b87348c82b82e69ac2039ddbbc9d36dc69c9a",
+        "sha256" : "12d586cbfc6fab0063fc4ff56a93cc7094ae020d6b368f53025727b2e8ca02d7"
+      },
+      "properties" : {
+        "license" : "New BSD License: http://www.opensource.org/licenses/bsd-license.php",
+        "id39" : "pkg:maven/com.esotericsoftware/minlog@1.3"
+      }
+    }, {
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/org/sonatype/ossindex/ossindex-service-api/1.2.0/ossindex-service-api-1.2.0.jar"
+      },
+      "hashes" : {
+        "md5" : "9348df420e1023fe344a429452bebeef",
+        "sha1" : "c83599f23ad778277fbf6766e0052da3923d1633",
+        "sha256" : "d6b70dfcc8931dc953170bd14532417f5bacde906222d98f3db1810a1af81479"
+      },
+      "properties" : {
+        "id40" : "pkg:maven/org.sonatype.ossindex/ossindex-service-api@1.2.0"
+      }
+    }, {
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/org/sonatype/ossindex/ossindex-service-client/1.2.0/ossindex-service-client-1.2.0.jar"
+      },
+      "hashes" : {
+        "md5" : "201dbfb49f0b22a006243a5841a7dafc",
+        "sha1" : "802db8efdc5377ec4798324885e88f13bc4b2d2a",
+        "sha256" : "aa4d40d0d3a5cefa5d2dd908ddde15106f0b66cc2d0e3aaaf74b609e0b6e335a"
+      },
+      "properties" : {
+        "id41" : "pkg:maven/org.sonatype.ossindex/ossindex-service-client@1.2.0"
+      }
+    }, {
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/org/sonatype/goodies/package-url-java/1.0.1/package-url-java-1.0.1.jar"
+      },
+      "hashes" : {
+        "md5" : "c3ad4b16cbc442ae5f0faca7f7a45ec0",
+        "sha1" : "15aa42711e3c142a088818357073f8f85bf42b08",
+        "sha256" : "27811dedb123d3cd685f301d629627f54275307313b00fcb671ab05a9bb19bea"
+      },
+      "properties" : {
+        "license" : "ASL2: http://www.apache.org/licenses/LICENSE-2.0.txt",
+        "id42" : "pkg:maven/org.sonatype.goodies/package-url-java@1.0.1"
+      }
+    }, {
+      "description" : {
+        "text" : "The official Java implementation of the PackageURL specification. PackageURL (purl) is a minimal\n        specification for describing a package via a \"mostly universal\" URL.\n    "
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/com/github/package-url/packageurl-java/1.1.1/packageurl-java-1.1.1.jar"
+      },
+      "hashes" : {
+        "md5" : "26fab3b8904883133f4e7ebc6ceb0642",
+        "sha1" : "78722cba39507aa906042bc78dfaf76368ec486b",
+        "sha256" : "84a4f88ca2567d5ba681c123f351027e3bccfa6e2f3624bc1965b55053a631bc"
+      },
+      "properties" : {
+        "license" : "MIT: https://opensource.org/licenses/MIT",
+        "id43" : "pkg:maven/com.github.package-url/packageurl-java@1.1.1"
+      }
+    }, {
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/com/h3xstream/retirejs/retirejs-core/3.0.1/retirejs-core-3.0.1.jar"
+      },
+      "hashes" : {
+        "md5" : "af51ed61a72671ff8c61942ddc8225cd",
+        "sha1" : "5aa8c3ee326e382ce9d55cc58e2182852a5b3421",
+        "sha256" : "6e5f2db50efa4f248af753b877858b6cd11bf31c1b7efb064634691a82784ea4"
+      },
+      "properties" : {
+        "id44" : "pkg:maven/com.h3xstream.retirejs/retirejs-core@3.0.1"
+      }
+    }, {
+      "description" : {
+        "text" : "Semantic versioning for Java apps."
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/com/vdurmont/semver4j/3.1.0/semver4j-3.1.0.jar"
+      },
+      "hashes" : {
+        "md5" : "b39112afda0af7dba1f160f7284d402f",
+        "sha1" : "0de1248f09dfe8df3b021c84e0642ee222cceb13",
+        "sha256" : "0f33724dd012099f0737e3d9203e28f4a804435526998d4f5841993058651cb8"
+      },
+      "properties" : {
+        "license" : "The MIT License: http://www.opensource.org/licenses/mit-license.php",
+        "id45" : "pkg:maven/com.vdurmont/semver4j@3.1.0"
+      }
+    }, {
+      "description" : {
+        "text" : "The slf4j API"
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/org/slf4j/slf4j-api/1.7.29/slf4j-api-1.7.29.jar"
+      },
+      "hashes" : {
+        "md5" : "75191c97f2d6ef4f990cbb4b2e56a46b",
+        "sha1" : "e56bf4473a4c6b71c7dd397a833dce86d1993d9d",
+        "sha256" : "47b624903c712f9118330ad2fb91d0780f7f666c3f22919d0fc14522c5cad9ea"
+      },
+      "properties" : {
+        "id46" : "pkg:maven/org.slf4j/slf4j-api@1.7.29"
+      }
+    }, {
+      "description" : {
+        "text" : "A parser for TOML"
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/com/moandjiezana/toml/toml4j/0.7.2/toml4j-0.7.2.jar"
+      },
+      "hashes" : {
+        "md5" : "efaec2fac998dce5bc118362bf724527",
+        "sha1" : "0a03337911d0bd2c40932aca3946edb30d0e7d0c",
+        "sha256" : "f5475e63e7e89e5db62223489aec7a56bd303543772077a17c2cb54c19ca3a20"
+      },
+      "properties" : {
+        "license" : "The MIT License: http://www.opensource.org/licenses/mit-license.php",
+        "id47" : "pkg:maven/com.moandjiezana.toml/toml4j@0.7.2"
+      }
+    }, {
+      "description" : {
+        "text" : "Apache Velocity is a general purpose template engine."
+      },
+      "location" : {
+        "uri" : "/Users/jeremy/.m2/repository/org/apache/velocity/velocity-engine-core/2.1/velocity-engine-core-2.1.jar"
+      },
+      "hashes" : {
+        "md5" : "b10fd2f10542c554d3750c9a2a642c67",
+        "sha1" : "af23c9cc6eafd771a75ef19c4bcaf89337401c10",
+        "sha256" : "48bd4f41c118bb5b6805c059c296691a7bfacb8edf4f3a6431778ab1309efbef"
+      },
+      "properties" : {
+        "license" : "https://www.apache.org/licenses/LICENSE-2.0.txt",
+        "id48" : "pkg:maven/org.apache.velocity/velocity-engine-core@2.1",
+        "vid14" : "cpe:2.3:a:apache:velocity_engine:2.1:*:*:*:*:*:*:*"
+      }
+    } ],
+    "results" : [ {
+      "ruleId" : "CVE-2021-35515",
+      "level" : "error",
+      "message" : {
+        "text" : "CVE-2021-35515 - When reading a specially crafted 7Z archive, the construction of the list of codecs that decompress an entry can result in an infinite loop. This could be used to mount a denial of service attack against services that use Compress' sevenz package."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/jeremy/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar",
+            "index" : 3
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "CVE-2021-35516",
+      "level" : "error",
+      "message" : {
+        "text" : "CVE-2021-35516 - When reading a specially crafted 7Z archive, Compress can be made to allocate large amounts of memory that finally leads to an out of memory error even for very small inputs. This could be used to mount a denial of service attack against services that use Compress' sevenz package."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/jeremy/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar",
+            "index" : 3
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "CVE-2021-35517",
+      "level" : "error",
+      "message" : {
+        "text" : "CVE-2021-35517 - When reading a specially crafted TAR archive, Compress can be made to allocate large amounts of memory that finally leads to an out of memory error even for very small inputs. This could be used to mount a denial of service attack against services that use Compress' tar package."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/jeremy/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar",
+            "index" : 3
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "CVE-2021-36090",
+      "level" : "error",
+      "message" : {
+        "text" : "CVE-2021-36090 - When reading a specially crafted ZIP archive, Compress can be made to allocate large amounts of memory that finally leads to an out of memory error even for very small inputs. This could be used to mount a denial of service attack against services that use Compress' zip package."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/jeremy/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar",
+            "index" : 3
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "CVE-2021-29425",
+      "level" : "error",
+      "message" : {
+        "text" : "CVE-2021-29425 - In Apache Commons IO before 2.7, When invoking the method FileNameUtils.normalize with an improper input string, like \"//../foo\", or \"\\\\..\\foo\", the result would be the same value, thus possibly providing access to files in the parent directory, but not further above (thus \"limited\" path traversal), if the calling code would use the result to construct a path value."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/jeremy/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar",
+            "index" : 4
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "CVE-2020-8908",
+      "level" : "error",
+      "message" : {
+        "text" : "CVE-2020-8908 - A temp directory creation vulnerability exists in all versions of Guava, allowing an attacker with access to the machine to potentially access data in a temporary directory created by the Guava API com.google.common.io.Files.createTempDir(). By default, on unix-like systems, the created directory is world-readable (readable by an attacker with access to the system). The method in question has been marked @Deprecated in versions 30.0 and later and should not be used. For Android developers, we recommend choosing a temporary directory API provided by Android, such as context.getCacheDir(). For other Java developers, we recommend migrating to the Java 7 API java.nio.file.Files.createTempDirectory() which explicitly configures permissions of 700, or configuring the Java runtime's java.io.tmpdir system property to point to a location whose permissions are appropriately configured."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/jeremy/.m2/repository/com/google/guava/guava/28.1-jre/guava-28.1-jre.jar",
+            "index" : 18
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "CVE-2021-23463",
+      "level" : "error",
+      "message" : {
+        "text" : "CVE-2021-23463 - The package com.h2database:h2 from 1.4.198 and before 2.0.202 are vulnerable to XML External Entity (XXE) Injection via the org.h2.jdbc.JdbcSQLXML class object, when it receives parsed string data from org.h2.jdbc.JdbcResultSet.getSQLXML() method. If it executes the getSource() method when the parameter is DOMSource.class it will trigger the vulnerability."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/jeremy/.m2/repository/com/h2database/h2/1.4.196/h2-1.4.196.jar",
+            "index" : 19
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "CVE-2020-35490",
+      "level" : "error",
+      "message" : {
+        "text" : "CVE-2020-35490 - FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.commons.dbcp2.datasources.PerUserPoolDataSource."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
+            "index" : 22
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "CVE-2020-35491",
+      "level" : "error",
+      "message" : {
+        "text" : "CVE-2020-35491 - FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.commons.dbcp2.datasources.SharedPoolDataSource."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
+            "index" : 22
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "CVE-2020-35728",
+      "level" : "error",
+      "message" : {
+        "text" : "CVE-2020-35728 - FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to com.oracle.wls.shaded.org.apache.xalan.lib.sql.JNDIConnectionPool (aka embedded Xalan in org.glassfish.web/javax.servlet.jsp.jstl)."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
+            "index" : 22
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "CVE-2020-36179",
+      "level" : "error",
+      "message" : {
+        "text" : "CVE-2020-36179 - FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to oadd.org.apache.commons.dbcp.cpdsadapter.DriverAdapterCPDS."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
+            "index" : 22
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "CVE-2020-36180",
+      "level" : "error",
+      "message" : {
+        "text" : "CVE-2020-36180 - FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.commons.dbcp2.cpdsadapter.DriverAdapterCPDS."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
+            "index" : 22
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "CVE-2020-36181",
+      "level" : "error",
+      "message" : {
+        "text" : "CVE-2020-36181 - FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.tomcat.dbcp.dbcp.cpdsadapter.DriverAdapterCPDS."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
+            "index" : 22
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "CVE-2020-36182",
+      "level" : "error",
+      "message" : {
+        "text" : "CVE-2020-36182 - FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.tomcat.dbcp.dbcp2.cpdsadapter.DriverAdapterCPDS."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
+            "index" : 22
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "CVE-2020-36183",
+      "level" : "error",
+      "message" : {
+        "text" : "CVE-2020-36183 - FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.docx4j.org.apache.xalan.lib.sql.JNDIConnectionPool."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
+            "index" : 22
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "CVE-2020-36184",
+      "level" : "error",
+      "message" : {
+        "text" : "CVE-2020-36184 - FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.tomcat.dbcp.dbcp2.datasources.PerUserPoolDataSource."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
+            "index" : 22
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "CVE-2020-36185",
+      "level" : "error",
+      "message" : {
+        "text" : "CVE-2020-36185 - FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.tomcat.dbcp.dbcp2.datasources.SharedPoolDataSource."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
+            "index" : 22
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "CVE-2020-36186",
+      "level" : "error",
+      "message" : {
+        "text" : "CVE-2020-36186 - FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.tomcat.dbcp.dbcp.datasources.PerUserPoolDataSource."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
+            "index" : 22
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "CVE-2020-36187",
+      "level" : "error",
+      "message" : {
+        "text" : "CVE-2020-36187 - FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.tomcat.dbcp.dbcp.datasources.SharedPoolDataSource."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
+            "index" : 22
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "CVE-2020-36188",
+      "level" : "error",
+      "message" : {
+        "text" : "CVE-2020-36188 - FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to com.newrelic.agent.deps.ch.qos.logback.core.db.JNDIConnectionSource."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
+            "index" : 22
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "CVE-2020-36189",
+      "level" : "error",
+      "message" : {
+        "text" : "CVE-2020-36189 - FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to com.newrelic.agent.deps.ch.qos.logback.core.db.DriverManagerConnectionSource."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/jeremy/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10.7/jackson-databind-2.9.10.7.jar",
+            "index" : 22
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "CVE-2021-37714",
+      "level" : "error",
+      "message" : {
+        "text" : "CVE-2021-37714 - jsoup is a Java library for working with HTML. Those using jsoup versions prior to 1.14.2 to parse untrusted HTML or XML may be vulnerable to DOS attacks. If the parser is run on user supplied input, an attacker may supply content that causes the parser to get stuck (loop indefinitely until cancelled), to complete more slowly than usual, or to throw an unexpected exception. This effect may support a denial of service attack. The issue is patched in version 1.14.2. There are a few available workarounds. Users may rate limit input parsing, limit the size of inputs based on system resources, and/or implement thread watchdogs to cap and timeout parse runtimes."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/jeremy/.m2/repository/org/jsoup/jsoup/1.12.1/jsoup-1.12.1.jar",
+            "index" : 30
+          }
+        }
+      } ]
+    }, {
+      "ruleId" : "CVE-2020-13936",
+      "level" : "error",
+      "message" : {
+        "text" : "CVE-2020-13936 - An attacker that is able to modify Velocity templates may execute arbitrary Java code or run arbitrary system commands with the same privileges as the account running the Servlet container. This applies to applications that allow untrusted users to upload/modify velocity templates running Apache Velocity Engine versions up to 2.2."
+      },
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "/Users/jeremy/.m2/repository/org/apache/velocity/velocity-engine-core/2.1/velocity-engine-core-2.1.jar",
+            "index" : 48
+          }
+        }
+      } ]
+    } ]
+  } ]
+}
