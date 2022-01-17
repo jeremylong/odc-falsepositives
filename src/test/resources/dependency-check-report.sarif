@@ -10,14 +10,14 @@
         "rules" : [ {
           "id" : "CVE-2021-36090",
           "shortDescription" : {
-            "text" : "HIGH severity CVE-2021-36090 vulnerability in pkg:maven/org.apache.commons/commons-compress@1.19"
+            "text" : "HIGH severity - CVE-2021-36090 vulnerability in pkg:maven/org.apache.commons/commons-compress@1.19"
           },
           "fullDescription" : {
             "text" : "When reading a specially crafted ZIP archive, Compress can be made to allocate large amounts of memory that finally leads to an out of memory error even for very small inputs. This could be used to mount a denial of service attack against services that use Compress' zip package."
           },
           "help" : {
             "text" : "",
-            "markdown" : "If this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2021-36090](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-36090).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
           },
           "properties" : {
             "cvssv2_score" : 5.0,
@@ -46,14 +46,14 @@
         }, {
           "id" : "CVE-2020-13936",
           "shortDescription" : {
-            "text" : "HIGH severity CVE-2020-13936 vulnerability in pkg:maven/org.apache.velocity/velocity-engine-core@2.1"
+            "text" : "HIGH severity - CVE-2020-13936 vulnerability in pkg:maven/org.apache.velocity/velocity-engine-core@2.1"
           },
           "fullDescription" : {
             "text" : "An attacker that is able to modify Velocity templates may execute arbitrary Java code or run arbitrary system commands with the same privileges as the account running the Servlet container. This applies to applications that allow untrusted users to upload/modify velocity templates running Apache Velocity Engine versions up to 2.2."
           },
           "help" : {
             "text" : "",
-            "markdown" : "If this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-13936](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-13936).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
           },
           "properties" : {
             "cvssv2_score" : 9.0,
@@ -82,14 +82,14 @@
         }, {
           "id" : "CVE-2021-35517",
           "shortDescription" : {
-            "text" : "HIGH severity CVE-2021-35517 - Allocation of Resources Without Limits or Throttling vulnerability in pkg:maven/org.apache.commons/commons-compress@1.19"
+            "text" : "HIGH severity - CVE-2021-35517 Allocation of Resources Without Limits or Throttling vulnerability in pkg:maven/org.apache.commons/commons-compress@1.19"
           },
           "fullDescription" : {
             "text" : "When reading a specially crafted TAR archive, Compress can be made to allocate large amounts of memory that finally leads to an out of memory error even for very small inputs. This could be used to mount a denial of service attack against services that use Compress' tar package."
           },
           "help" : {
             "text" : "",
-            "markdown" : "If this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2021-35517](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-35517).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
           },
           "properties" : {
             "cvssv2_score" : 5.0,
@@ -118,14 +118,14 @@
         }, {
           "id" : "CVE-2021-35516",
           "shortDescription" : {
-            "text" : "HIGH severity CVE-2021-35516 - Allocation of Resources Without Limits or Throttling vulnerability in pkg:maven/org.apache.commons/commons-compress@1.19"
+            "text" : "HIGH severity - CVE-2021-35516 Allocation of Resources Without Limits or Throttling vulnerability in pkg:maven/org.apache.commons/commons-compress@1.19"
           },
           "fullDescription" : {
             "text" : "When reading a specially crafted 7Z archive, Compress can be made to allocate large amounts of memory that finally leads to an out of memory error even for very small inputs. This could be used to mount a denial of service attack against services that use Compress' sevenz package."
           },
           "help" : {
             "text" : "",
-            "markdown" : "If this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2021-35516](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-35516).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
           },
           "properties" : {
             "cvssv2_score" : 5.0,
@@ -154,14 +154,14 @@
         }, {
           "id" : "CVE-2020-35728",
           "shortDescription" : {
-            "text" : "HIGH severity CVE-2020-35728 - Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+            "text" : "HIGH severity - CVE-2020-35728 Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           },
           "fullDescription" : {
             "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to com.oracle.wls.shaded.org.apache.xalan.lib.sql.JNDIConnectionPool (aka embedded Xalan in org.glassfish.web/javax.servlet.jsp.jstl)."
           },
           "help" : {
             "text" : "",
-            "markdown" : "If this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-35728](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-35728).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
@@ -190,14 +190,14 @@
         }, {
           "id" : "CVE-2021-35515",
           "shortDescription" : {
-            "text" : "HIGH severity CVE-2021-35515 - Excessive Iteration vulnerability in pkg:maven/org.apache.commons/commons-compress@1.19"
+            "text" : "HIGH severity - CVE-2021-35515 Excessive Iteration vulnerability in pkg:maven/org.apache.commons/commons-compress@1.19"
           },
           "fullDescription" : {
             "text" : "When reading a specially crafted 7Z archive, the construction of the list of codecs that decompress an entry can result in an infinite loop. This could be used to mount a denial of service attack against services that use Compress' sevenz package."
           },
           "help" : {
             "text" : "",
-            "markdown" : "If this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2021-35515](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-35515).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
           },
           "properties" : {
             "cvssv2_score" : 5.0,
@@ -226,14 +226,14 @@
         }, {
           "id" : "CVE-2020-8908",
           "shortDescription" : {
-            "text" : "LOW severity CVE-2020-8908 - Incorrect Permission Assignment for Critical Resource vulnerability in pkg:maven/com.google.guava/guava@28.1-jre"
+            "text" : "LOW severity - CVE-2020-8908 Incorrect Permission Assignment for Critical Resource vulnerability in pkg:maven/com.google.guava/guava@28.1-jre"
           },
           "fullDescription" : {
             "text" : "A temp directory creation vulnerability exists in all versions of Guava, allowing an attacker with access to the machine to potentially access data in a temporary directory created by the Guava API com.google.common.io.Files.createTempDir(). By default, on unix-like systems, the created directory is world-readable (readable by an attacker with access to the system). The method in question has been marked @Deprecated in versions 30.0 and later and should not be used. For Android developers, we recommend choosing a temporary directory API provided by Android, such as context.getCacheDir(). For other Java developers, we recommend migrating to the Java 7 API java.nio.file.Files.createTempDirectory() which explicitly configures permissions of 700, or configuring the Java runtime's java.io.tmpdir system property to point to a location whose permissions are appropriately configured."
           },
           "help" : {
             "text" : "",
-            "markdown" : "If this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-8908](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-8908).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
           },
           "properties" : {
             "cvssv2_score" : 2.1,
@@ -262,14 +262,14 @@
         }, {
           "id" : "CVE-2020-36189",
           "shortDescription" : {
-            "text" : "HIGH severity CVE-2020-36189 - Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+            "text" : "HIGH severity - CVE-2020-36189 Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           },
           "fullDescription" : {
             "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to com.newrelic.agent.deps.ch.qos.logback.core.db.DriverManagerConnectionSource."
           },
           "help" : {
             "text" : "",
-            "markdown" : "If this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-36189](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36189).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
@@ -298,14 +298,14 @@
         }, {
           "id" : "CVE-2020-36188",
           "shortDescription" : {
-            "text" : "HIGH severity CVE-2020-36188 - Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+            "text" : "HIGH severity - CVE-2020-36188 Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           },
           "fullDescription" : {
             "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to com.newrelic.agent.deps.ch.qos.logback.core.db.JNDIConnectionSource."
           },
           "help" : {
             "text" : "",
-            "markdown" : "If this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-36188](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36188).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
@@ -334,14 +334,14 @@
         }, {
           "id" : "CVE-2021-37714",
           "shortDescription" : {
-            "text" : "HIGH severity CVE-2021-37714 - Loop with Unreachable Exit Condition ('Infinite Loop') vulnerability in pkg:maven/org.jsoup/jsoup@1.12.1"
+            "text" : "HIGH severity - CVE-2021-37714 Loop with Unreachable Exit Condition ('Infinite Loop') vulnerability in pkg:maven/org.jsoup/jsoup@1.12.1"
           },
           "fullDescription" : {
             "text" : "jsoup is a Java library for working with HTML. Those using jsoup versions prior to 1.14.2 to parse untrusted HTML or XML may be vulnerable to DOS attacks. If the parser is run on user supplied input, an attacker may supply content that causes the parser to get stuck (loop indefinitely until cancelled), to complete more slowly than usual, or to throw an unexpected exception. This effect may support a denial of service attack. The issue is patched in version 1.14.2. There are a few available workarounds. Users may rate limit input parsing, limit the size of inputs based on system resources, and/or implement thread watchdogs to cap and timeout parse runtimes."
           },
           "help" : {
             "text" : "",
-            "markdown" : "If this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2021-37714](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-37714).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
           },
           "properties" : {
             "cvssv2_score" : 5.0,
@@ -370,14 +370,14 @@
         }, {
           "id" : "CVE-2020-36179",
           "shortDescription" : {
-            "text" : "HIGH severity CVE-2020-36179 - Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+            "text" : "HIGH severity - CVE-2020-36179 Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           },
           "fullDescription" : {
             "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to oadd.org.apache.commons.dbcp.cpdsadapter.DriverAdapterCPDS."
           },
           "help" : {
             "text" : "",
-            "markdown" : "If this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-36179](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36179).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
@@ -406,14 +406,14 @@
         }, {
           "id" : "CVE-2021-29425",
           "shortDescription" : {
-            "text" : "MEDIUM severity CVE-2021-29425 - Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in pkg:maven/commons-io/commons-io@2.6"
+            "text" : "MEDIUM severity - CVE-2021-29425 Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in pkg:maven/commons-io/commons-io@2.6"
           },
           "fullDescription" : {
             "text" : "In Apache Commons IO before 2.7, When invoking the method FileNameUtils.normalize with an improper input string, like \"//../foo\", or \"\\\\..\\foo\", the result would be the same value, thus possibly providing access to files in the parent directory, but not further above (thus \"limited\" path traversal), if the calling code would use the result to construct a path value."
           },
           "help" : {
             "text" : "",
-            "markdown" : "If this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2021-29425](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-29425).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
           },
           "properties" : {
             "cvssv2_score" : 5.8,
@@ -442,14 +442,14 @@
         }, {
           "id" : "CVE-2020-36181",
           "shortDescription" : {
-            "text" : "HIGH severity CVE-2020-36181 - Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+            "text" : "HIGH severity - CVE-2020-36181 Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           },
           "fullDescription" : {
             "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.tomcat.dbcp.dbcp.cpdsadapter.DriverAdapterCPDS."
           },
           "help" : {
             "text" : "",
-            "markdown" : "If this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-36181](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36181).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
@@ -478,14 +478,14 @@
         }, {
           "id" : "CVE-2020-36180",
           "shortDescription" : {
-            "text" : "HIGH severity CVE-2020-36180 - Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+            "text" : "HIGH severity - CVE-2020-36180 Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           },
           "fullDescription" : {
             "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.commons.dbcp2.cpdsadapter.DriverAdapterCPDS."
           },
           "help" : {
             "text" : "",
-            "markdown" : "If this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-36180](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36180).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
@@ -514,14 +514,14 @@
         }, {
           "id" : "CVE-2020-35490",
           "shortDescription" : {
-            "text" : "HIGH severity CVE-2020-35490 - Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+            "text" : "HIGH severity - CVE-2020-35490 Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           },
           "fullDescription" : {
             "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.commons.dbcp2.datasources.PerUserPoolDataSource."
           },
           "help" : {
             "text" : "",
-            "markdown" : "If this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-35490](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-35490).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
@@ -550,14 +550,14 @@
         }, {
           "id" : "CVE-2020-36183",
           "shortDescription" : {
-            "text" : "HIGH severity CVE-2020-36183 - Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+            "text" : "HIGH severity - CVE-2020-36183 Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           },
           "fullDescription" : {
             "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.docx4j.org.apache.xalan.lib.sql.JNDIConnectionPool."
           },
           "help" : {
             "text" : "",
-            "markdown" : "If this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-36183](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36183).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
@@ -586,14 +586,14 @@
         }, {
           "id" : "CVE-2021-23463",
           "shortDescription" : {
-            "text" : "CRITICAL severity CVE-2021-23463 - Improper Restriction of XML External Entity Reference ('XXE') vulnerability in pkg:maven/com.h2database/h2@1.4.196"
+            "text" : "CRITICAL severity - CVE-2021-23463 Improper Restriction of XML External Entity Reference ('XXE') vulnerability in pkg:maven/com.h2database/h2@1.4.196"
           },
           "fullDescription" : {
             "text" : "The package com.h2database:h2 from 1.4.198 and before 2.0.202 are vulnerable to XML External Entity (XXE) Injection via the org.h2.jdbc.JdbcSQLXML class object, when it receives parsed string data from org.h2.jdbc.JdbcResultSet.getSQLXML() method. If it executes the getSource() method when the parameter is DOMSource.class it will trigger the vulnerability."
           },
           "help" : {
             "text" : "",
-            "markdown" : "If this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2021-23463](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-23463).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
           },
           "properties" : {
             "cvssv2_score" : 6.4,
@@ -622,14 +622,14 @@
         }, {
           "id" : "CVE-2020-36182",
           "shortDescription" : {
-            "text" : "HIGH severity CVE-2020-36182 - Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+            "text" : "HIGH severity - CVE-2020-36182 Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           },
           "fullDescription" : {
             "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.tomcat.dbcp.dbcp2.cpdsadapter.DriverAdapterCPDS."
           },
           "help" : {
             "text" : "",
-            "markdown" : "If this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-36182](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36182).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
@@ -658,14 +658,14 @@
         }, {
           "id" : "CVE-2020-36185",
           "shortDescription" : {
-            "text" : "HIGH severity CVE-2020-36185 - Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+            "text" : "HIGH severity - CVE-2020-36185 Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           },
           "fullDescription" : {
             "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.tomcat.dbcp.dbcp2.datasources.SharedPoolDataSource."
           },
           "help" : {
             "text" : "",
-            "markdown" : "If this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-36185](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36185).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
@@ -694,14 +694,14 @@
         }, {
           "id" : "CVE-2020-35491",
           "shortDescription" : {
-            "text" : "HIGH severity CVE-2020-35491 - Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+            "text" : "HIGH severity - CVE-2020-35491 Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           },
           "fullDescription" : {
             "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.commons.dbcp2.datasources.SharedPoolDataSource."
           },
           "help" : {
             "text" : "",
-            "markdown" : "If this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-35491](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-35491).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
@@ -730,14 +730,14 @@
         }, {
           "id" : "CVE-2020-36184",
           "shortDescription" : {
-            "text" : "HIGH severity CVE-2020-36184 - Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+            "text" : "HIGH severity - CVE-2020-36184 Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           },
           "fullDescription" : {
             "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.tomcat.dbcp.dbcp2.datasources.PerUserPoolDataSource."
           },
           "help" : {
             "text" : "",
-            "markdown" : "If this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-36184](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36184).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
@@ -766,14 +766,14 @@
         }, {
           "id" : "CVE-2020-36187",
           "shortDescription" : {
-            "text" : "HIGH severity CVE-2020-36187 - Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+            "text" : "HIGH severity - CVE-2020-36187 Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           },
           "fullDescription" : {
             "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.tomcat.dbcp.dbcp.datasources.SharedPoolDataSource."
           },
           "help" : {
             "text" : "",
-            "markdown" : "If this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-36187](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36187).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
@@ -802,14 +802,14 @@
         }, {
           "id" : "CVE-2020-36186",
           "shortDescription" : {
-            "text" : "HIGH severity CVE-2020-36186 - Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
+            "text" : "HIGH severity - CVE-2020-36186 Deserialization of Untrusted Data vulnerability in pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.9.10.7"
           },
           "fullDescription" : {
             "text" : "FasterXML jackson-databind 2.x before 2.9.10.8 mishandles the interaction between serialization gadgets and typing, related to org.apache.tomcat.dbcp.dbcp.datasources.PerUserPoolDataSource."
           },
           "help" : {
             "text" : "",
-            "markdown" : "If this is a false positive - consider using the HTML report to generate a suppression file."
+            "markdown" : "For more information see [CVE-2020-36186](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36186).\nIf this is a false positive - consider using the HTML report to generate a suppression file."
           },
           "properties" : {
             "cvssv2_score" : 6.8,
