@@ -10,26 +10,32 @@ jobs:
     if: contains(github.event.issue.labels.*.name, 'FP Report') 
     steps:
       - uses: actions/checkout@v2
+        with:
+          path: odc
       - name: Parse Issue Body
         uses: stefanbuck/github-issue-parser@v2
         id: issue-parser
         with:
-          template-path: .github/ISSUE_TEMPLATE/false-positive-report.yml
+          template-path: odc/.github/ISSUE_TEMPLATE/false-positive-report.yml
       - uses: actions/setup-node@v2
         with:
           node-version: 14
       - run: npm init -y
       - run: npm install packageurl-js
       - uses: actions/github-script@v6
+        id: purl-parser
         with:
           script: |
             const { PackageURL } = require('packageurl-js');
             const pkg = PackageURL.fromString('${{ fromJSON(steps.issue-parser.outputs.jsonString).purl }}');
             console.log(pkg);
+            return pkg;
       - name: issue context
         run: |
           echo "---------------------"
           echo "---------------------"
           echo '${{ fromJSON(steps.issue-parser.outputs.jsonString).purl }}'
+          echo "---------------------"
+          echo '${{ fromJSON(steps.purl-parser.outputs.result).type  }}'
           echo "---------------------"
           echo "---------------------"
