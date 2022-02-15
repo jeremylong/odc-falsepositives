@@ -23,6 +23,6 @@ jobs:
           echo "Issue body: ${{ github.event.issue.body }}"
           echo "---------------------"
           echo "---------------------"
-          echo "parsed: ${{ steps.issue-parser.outputs }}"
+          echo "parsed: ${{ steps.issue-parser.outputs.jsonString }}"
           echo "---------------------"
           echo "---------------------"
