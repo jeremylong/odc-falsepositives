@@ -48,12 +48,3 @@ jobs:
                 body: 'Error parsing package url: ' + ex
               })
             }
-      - name: issue context
-        run: |
-          echo "---------------------"
-          echo "---------------------"
-          echo '${{ fromJSON(steps.issue-parser.outputs.jsonString).purl }}'
-          echo "---------------------"
-          echo '${{ fromJSON(steps.purl-parser.outputs.result).type  }}'
-          echo "---------------------"
-          echo "---------------------"
