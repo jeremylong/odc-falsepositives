@@ -9,14 +9,20 @@ jobs:
     runs-on: ubuntu-latest
     if: contains(github.event.issue.labels.*.name, 'FP Report') 
     steps:
+      - name: Remove Labels
+        if: contains(github.event.issue.labels.*.name, 'pending more information')
+        uses: actions/github-script@v6
+        with:
+          script: |
+              github.rest.issues.removeLabels({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                labels: ['pending more information']
+              })
       - uses: actions/checkout@v2
         with:
           path: odc
-      - name: directory listing
-        run: |
-          ls
-          echo "----------"
-          ls odc
       - name: Parse False Positive Issue
         uses: stefanbuck/github-issue-parser@v2
         id: issue-parser
@@ -35,17 +41,23 @@ jobs:
         with:
           script: |
             try {
-            const { PackageURL } = require('packageurl-js');
-            const pkg = PackageURL.fromString('${{ fromJSON(steps.issue-parser.outputs.jsonString).purl }}');
-            console.log(pkg);
-            return pkg;
+                const { PackageURL } = require('packageurl-js');
+                const pkg = PackageURL.fromString('${{ fromJSON(steps.issue-parser.outputs.jsonString).purl }}');
+                console.log(pkg);
+                return pkg;
             } catch (ex) {
               console.log(ex);
               await github.rest.issues.createComment({
                 issue_number: context.issue.number,
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                body: 'Error parsing package url: ' + ex
+                body: 'Error parsing package url: ' + ex + '\n\nPlease correct the package URL'
+              })
+              github.rest.issues.addLabels({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                labels: ['pending more information']
               })
               throw new Error('Invalid package url');
             }
