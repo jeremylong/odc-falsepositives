@@ -47,4 +47,15 @@ jobs:
                 repo: context.repo.repo,
                 body: 'Error parsing package url: ' + ex
               })
+              throw new Error('Invalid package url');
             }
+            
+      - name: issue context
+        run: |
+          echo "---------------------"
+          echo "---------------------"
+          echo '${{ fromJSON(steps.issue-parser.outputs.jsonString).purl }}'
+          echo "---------------------"
+          echo '${{ fromJSON(steps.purl-parser.outputs.result).type  }}'
+          echo "---------------------"
+          echo "---------------------"
