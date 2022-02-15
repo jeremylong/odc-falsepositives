@@ -15,16 +15,21 @@ jobs:
         id: issue-parser
         with:
           template-path: .github/ISSUE_TEMPLATE/false-positive-report.yml
-
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - run: npm ci
+      - run: npm install packageurl-js
+      - uses: actions/github-script@v6
+        with:
+          script: |
+            const { PackageURL } = require('packageurl-js');
+            const pkg = PackageURL.fromString('${{ fromJSON(steps.issue-parser.outputs.jsonString).purl }}');
+            console.log(pkg);
       - name: issue context
         run: |
-          echo "${{github.event.issue}}"
-          echo "Issue title: ${{ github.event.issue.title }}"
-          echo "Issue body: ${{ github.event.issue.body }}"
           echo "---------------------"
           echo "---------------------"
           echo '${{ fromJSON(steps.issue-parser.outputs.jsonString).purl }}'
-          echo '${{ steps.issue-parser.outputs.jsonString }}' > test.json
-          cat test.json
           echo "---------------------"
           echo "---------------------"
