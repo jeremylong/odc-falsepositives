@@ -10,11 +10,11 @@ jobs:
     if: contains(github.event.issue.labels.*.name, 'FP Report') 
     steps:
       - name: Parse Issue Body
-        uses: peter-murray/issue-body-parser-action@v1
-        id: issue_body_parser
+        uses: stefanbuck/github-issue-parser@v2
+        id: issue-parser
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          issue_id: ${{ github.event.issue.number }}
+          template-path: .github/ISSUE_TEMPLATE/false-positive-report.yml
+
       - name: issue context
         run: |
           echo "${{github.event.issue}}"
@@ -22,6 +22,6 @@ jobs:
           echo "Issue body: ${{ github.event.issue.body }}"
           echo "---------------------"
           echo "---------------------"
-          echo "parsed: ${{ steps.issue_body.outputs.payload }}"
+          echo "parsed: ${{ steps.issue-parser.outputs }}"
           echo "---------------------"
           echo "---------------------"
