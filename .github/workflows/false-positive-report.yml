@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     if: contains(github.event.issue.labels.*.name, 'FP Report') 
     steps:
+      - uses: actions/checkout@v2
       - name: Parse Issue Body
         uses: stefanbuck/github-issue-parser@v2
         id: issue-parser
