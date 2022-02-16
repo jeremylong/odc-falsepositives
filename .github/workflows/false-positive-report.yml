@@ -97,6 +97,26 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
+            var namespace = '${{ fromJSON(steps.purl-parser.outputs.result).namespace }}';
+            var name = '${{ fromJSON(steps.purl-parser.outputs.result).name }}';
+            var packageType = '${{ fromJSON(steps.purl-parser.outputs.result).type }}';
+            var purl = '^pkg:' + packageType;
+            if(namespace !== null && namespace !== '') {
+                purl += '/' + namespace.replaceAll('.','\\.');
+            }
+            if(name !== null && name !== '') {
+                purl += '/' + name.replaceAll('.','\\.');
+            }
+            purl += '@.*$';
+            var cpe = '${{ fromJSON(steps.issue-parser.outputs.jsonString).purl }}'.split(':');
+            //cpe:2.3:a:apache:log4j:2.12.1:*:*:*:*:*:*:*
+            var matchCpe;
+            if (cpe[1] == '2.3') {
+               matchcpe = 'cpe:/a:' + cpe[2] + ':' + cpe[3];
+            } else {
+               matchcpe = 'cpe:/a:' + cpe[1] + ':' + cpe[2];
+            }
+            
             await github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
@@ -107,8 +127,8 @@ jobs:
                     '   <notes><![CDATA[\n' +
                     '   FP per issue #' + context.issue.number + '\n' +
                     '   ]]></notes>\n' +
-                    '   <packageUrl regex="true">^pkg:maven/org\.apache\.logging\.log4j/log4j\-slf4j\-impl@.*$</packageUrl>\n' +
-                    '   <cpe>cpe:/a:apache:log4j</cpe>\n' +
+                    '   <packageUrl regex="true">' + purl + '</packageUrl>\n' +
+                    '   <cpe>' + matchcpe + '</cpe>\n' +
                     '</suppress>\n```\n\n' +
                     'Link to test results: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'
             })
