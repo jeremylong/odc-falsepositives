@@ -36,8 +36,8 @@ jobs:
           npm init -y
           npm install packageurl-js
       - name: Parse Package URL
-        uses: actions/github-script@v6
         id: purl-parser
+        uses: actions/github-script@v6
         with:
           script: |
             try {
@@ -63,13 +63,15 @@ jobs:
             }
       - name: Maven FP
         if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'maven' }}
-        run: |
-          await github.rest.issues.createComment({
-            issue_number: context.issue.number,
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            body: 'Maven Coordinates\n\n```xml\n<dependency>\n   <groupId>${{ fromJSON(steps.purl-parser.outputs.result).namespace  }}</groupId>\n   <artifactId>${{ fromJSON(steps.purl-parser.outputs.result).name }}</artifactId>\n   <version>${{ fromJSON(steps.purl-parser.outputs.result).version }}</version>\n</dependency>\n```'
-          })
+        uses: actions/github-script@v6
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'Maven Coordinates\n\n```xml\n<dependency>\n   <groupId>${{ fromJSON(steps.purl-parser.outputs.result).namespace  }}</groupId>\n   <artifactId>${{ fromJSON(steps.purl-parser.outputs.result).name }}</artifactId>\n   <version>${{ fromJSON(steps.purl-parser.outputs.result).version }}</version>\n</dependency>\n```'
+            })
       - name: Nuget FP
         if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'nuget' }}
         run: echo "nuget"
