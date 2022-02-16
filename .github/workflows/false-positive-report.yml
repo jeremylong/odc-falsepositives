@@ -72,12 +72,43 @@ jobs:
               repo: context.repo.repo,
               body: 'Maven Coordinates\n\n```xml\n<dependency>\n   <groupId>${{ fromJSON(steps.purl-parser.outputs.result).namespace  }}</groupId>\n   <artifactId>${{ fromJSON(steps.purl-parser.outputs.result).name }}</artifactId>\n   <version>${{ fromJSON(steps.purl-parser.outputs.result).version }}</version>\n</dependency>\n```'
             })
+      - name: Maven FP ODC
+        if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'maven' }}
+        run: |
+          ver=$(curl -s https://jeremylong.github.io/DependencyCheck/current.txt)
+          mkdir ./fp-project
+          cp odc/.github/ISSUE_TEMPLATE/maven-pom.start ./fp-project/pom.xml
+          echo -n $ver >> ./fp-project/pom.xml
+          cat odc/.github/ISSUE_TEMPLATE/maven-pom.middle >> ./fp-project/pom.xml
+          echo "<dependency>" >> ./fp-project/pom.xml
+          echo "   <groupId>${{ fromJSON(steps.purl-parser.outputs.result).namespace }}</groupId>" >> ./fp-project/pom.xml
+          echo "   <artifactId>${{ fromJSON(steps.purl-parser.outputs.result).name }}</artifactId>" >> ./fp-project/pom.xml
+          echo "   <version>${{ fromJSON(steps.purl-parser.outputs.result).version }}</version>" >> ./fp-project/pom.xml
+          echo "</dependency>" >> ./fp-project/pom.xml
+          cat odc/.github/ISSUE_TEMPLATE/maven-pom.end >> ./fp-project/pom.xml
+          cd ./fp-project
+          ## not ideal as verify would be better then using the docker image...
+          ##mvn verify
+          mvn dependency:copy-dependencies
       - name: Nuget FP
         if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'nuget' }}
         run: echo "nuget"
       - name: npm FP
         if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'npm' }}
         run: echo "npm"
+      - name: Run ODC
+        uses: dependency-check/Dependency-Check_Action@main
+        with:
+          project: 'fp-test'
+          path: './fp-project'
+          format: 'HTML'  
+          args: >
+            --failOnCVSS 11
+      - name: Upload FP Report
+        uses: actions/upload-artifact@master
+        with:
+           name: FP Report
+           path: ${{github.workspace}}/reports
       - name: issue context
         run: |
           echo "---------------------"
