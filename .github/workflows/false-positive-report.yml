@@ -61,26 +61,7 @@ jobs:
               })
               throw new Error('Invalid package url');
             }
-      - name: Maven FP
-        if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'maven' }}
-        uses: actions/github-script@v6
-        with:
-          script: |
-            await github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: 'Maven Coordinates\n\n```xml\n<dependency>\n   <groupId>${{ fromJSON(steps.purl-parser.outputs.result).namespace  }}</groupId>\n   <artifactId>${{ fromJSON(steps.purl-parser.outputs.result).name }}</artifactId>\n   <version>${{ fromJSON(steps.purl-parser.outputs.result).version }}</version>\n</dependency>\n```\n\n' +
-                    'Suppression rule:\n```xml\n' +
-                    '<suppress base="true">\n' +
-                    '   <notes><![CDATA[\n' +
-                    '   file name: log4j-slf4j-impl-2.12.1.jar\n' +
-                    '   ]]></notes>\n' +
-                    '   <packageUrl regex="true">^pkg:maven/org\.apache\.logging\.log4j/log4j\-slf4j\-impl@.*$</packageUrl>\n' +
-                    '   <cpe>cpe:/a:apache:log4j</cpe>\n' +
-                    '</suppress>\n```\n'
-            })
-      - name: Maven FP ODC
+      - name: Setup Maven FP Project
         if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'maven' }}
         run: |
           ver=$(curl -s https://jeremylong.github.io/DependencyCheck/current.txt)
@@ -98,12 +79,6 @@ jobs:
           ## not ideal as verify would be better then using the docker image...
           ##mvn verify
           mvn dependency:copy-dependencies
-      - name: Nuget FP
-        if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'nuget' }}
-        run: echo "nuget"
-      - name: npm FP
-        if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'npm' }}
-        run: echo "npm"
       - name: Run ODC
         uses: dependency-check/Dependency-Check_Action@main
         with:
@@ -117,6 +92,33 @@ jobs:
         with:
            name: FP Report
            path: ${{github.workspace}}/reports
+      - name: Maven FP Comment
+        if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'maven' }}
+        uses: actions/github-script@v6
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'Maven Coordinates\n\n```xml\n<dependency>\n   <groupId>${{ fromJSON(steps.purl-parser.outputs.result).namespace  }}</groupId>\n   <artifactId>${{ fromJSON(steps.purl-parser.outputs.result).name }}</artifactId>\n   <version>${{ fromJSON(steps.purl-parser.outputs.result).version }}</version>\n</dependency>\n```\n\n' +
+                    'Suppression rule:\n```xml\n' +
+                    '<suppress base="true">\n' +
+                    '   <notes><![CDATA[\n' +
+                    '   FP per #' + context.issue.number + '\n' +
+                    '   ]]></notes>\n' +
+                    '   <packageUrl regex="true">^pkg:maven/org\.apache\.logging\.log4j/log4j\-slf4j\-impl@.*$</packageUrl>\n' +
+                    '   <cpe>cpe:/a:apache:log4j</cpe>\n' +
+                    '</suppress>\n```\n\n' +
+                    'Link to test results: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+            })
+      - name: Nuget FP
+        if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'nuget' }}
+        run: echo "nuget"
+      - name: npm FP
+        if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'npm' }}
+        run: echo "npm"
+        
       - name: issue context
         run: |
           echo "---------------------"
