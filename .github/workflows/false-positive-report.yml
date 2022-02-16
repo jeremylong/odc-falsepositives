@@ -130,3 +130,4 @@ jobs:
           echo '${{ github.run_id }}'
           echo '${{ github.run_number }}'
           echo '${{ github.run_attempt }}'
+          echo '${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'
