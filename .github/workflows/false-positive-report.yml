@@ -129,3 +129,4 @@ jobs:
           echo "---------------------"
           echo '${{ github.run_id }}'
           echo '${{ github.run_number }}'
+          echo '${{ github.run_attempt }}'
