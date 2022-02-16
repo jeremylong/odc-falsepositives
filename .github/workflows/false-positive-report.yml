@@ -77,15 +77,15 @@ jobs:
         run: |
           ver=$(curl -s https://jeremylong.github.io/DependencyCheck/current.txt)
           mkdir ./fp-project
-          cp odc/.github/ISSUE_TEMPLATE/maven-pom.start ./fp-project/pom.xml
+          cp odc/.github/ISSUE_TEMPLATE/files/maven-pom.start ./fp-project/pom.xml
           echo -n $ver >> ./fp-project/pom.xml
-          cat odc/.github/ISSUE_TEMPLATE/maven-pom.middle >> ./fp-project/pom.xml
+          cat odc/.github/ISSUE_TEMPLATE/files/maven-pom.middle >> ./fp-project/pom.xml
           echo "<dependency>" >> ./fp-project/pom.xml
           echo "   <groupId>${{ fromJSON(steps.purl-parser.outputs.result).namespace }}</groupId>" >> ./fp-project/pom.xml
           echo "   <artifactId>${{ fromJSON(steps.purl-parser.outputs.result).name }}</artifactId>" >> ./fp-project/pom.xml
           echo "   <version>${{ fromJSON(steps.purl-parser.outputs.result).version }}</version>" >> ./fp-project/pom.xml
           echo "</dependency>" >> ./fp-project/pom.xml
-          cat odc/.github/ISSUE_TEMPLATE/maven-pom.end >> ./fp-project/pom.xml
+          cat odc/.github/ISSUE_TEMPLATE/files/maven-pom.end >> ./fp-project/pom.xml
           cd ./fp-project
           ## not ideal as verify would be better then using the docker image...
           ##mvn verify
