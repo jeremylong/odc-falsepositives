@@ -70,7 +70,15 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: 'Maven Coordinates\n\n```xml\n<dependency>\n   <groupId>${{ fromJSON(steps.purl-parser.outputs.result).namespace  }}</groupId>\n   <artifactId>${{ fromJSON(steps.purl-parser.outputs.result).name }}</artifactId>\n   <version>${{ fromJSON(steps.purl-parser.outputs.result).version }}</version>\n</dependency>\n```'
+              body: 'Maven Coordinates\n\n```xml\n<dependency>\n   <groupId>${{ fromJSON(steps.purl-parser.outputs.result).namespace  }}</groupId>\n   <artifactId>${{ fromJSON(steps.purl-parser.outputs.result).name }}</artifactId>\n   <version>${{ fromJSON(steps.purl-parser.outputs.result).version }}</version>\n</dependency>\n```\n\n' +
+                    'Suppression rule:\n```xml\n' +
+                    '<suppress base="true">\n' +
+                    '   <notes><![CDATA[\n' +
+                    '   file name: log4j-slf4j-impl-2.12.1.jar\n' +
+                    '   ]]></notes>\n' +
+                    '   <packageUrl regex="true">^pkg:maven/org\.apache\.logging\.log4j/log4j\-slf4j\-impl@.*$</packageUrl>\n' +
+                    '   <cpe>cpe:/a:apache:log4j</cpe>\n' +
+                    '</suppress>\n```\n'
             })
       - name: Maven FP ODC
         if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'maven' }}
@@ -117,4 +125,5 @@ jobs:
           echo "---------------------"
           echo '${{ fromJSON(steps.purl-parser.outputs.result).type  }}'
           echo "---------------------"
+          echo '${{ steps.purl-parser.outputs.result  }}'
           echo "---------------------"
