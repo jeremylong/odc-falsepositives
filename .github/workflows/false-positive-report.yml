@@ -127,3 +127,5 @@ jobs:
           echo "---------------------"
           echo '${{ steps.purl-parser.outputs.result  }}'
           echo "---------------------"
+          echo '${{ github.run_id }}'
+          echo '${{ github.run_number }}'
