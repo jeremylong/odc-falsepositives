@@ -72,9 +72,10 @@ jobs:
           })
       - name: Nuget FP
         if: fromJSON(steps.purl-parser.outputs.result).type == 'nuget')
+        run: echo "nuget"
       - name: npm FP
         if: fromJSON(steps.purl-parser.outputs.result).type == 'npm')
-      
+        run: echo "npm"
       - name: issue context
         run: |
           echo "---------------------"
