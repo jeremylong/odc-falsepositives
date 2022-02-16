@@ -105,7 +105,7 @@ jobs:
                     'Suppression rule:\n```xml\n' +
                     '<suppress base="true">\n' +
                     '   <notes><![CDATA[\n' +
-                    '   FP per #' + context.issue.number + '\n' +
+                    '   FP per issue #' + context.issue.number + '\n' +
                     '   ]]></notes>\n' +
                     '   <packageUrl regex="true">^pkg:maven/org\.apache\.logging\.log4j/log4j\-slf4j\-impl@.*$</packageUrl>\n' +
                     '   <cpe>cpe:/a:apache:log4j</cpe>\n' +
