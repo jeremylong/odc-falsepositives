@@ -79,6 +79,13 @@ jobs:
           ## not ideal as verify would be better then using the docker image...
           ##mvn verify
           mvn dependency:copy-dependencies
+      - name: Setup npm FP Project
+        if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'npm' }}
+        run: |
+          mkdir ./fp-project
+          cd ./fp-project
+          npm init -y
+          npm install ${{ fromJSON(steps.purl-parser.outputs.result).name }}@${{ fromJSON(steps.purl-parser.outputs.result).version }}
       - name: Run ODC
         uses: dependency-check/Dependency-Check_Action@main
         with:
@@ -109,7 +116,44 @@ jobs:
             }
             purl += '@.*$';
             var cpe = '${{ fromJSON(steps.issue-parser.outputs.jsonString).purl }}'.split(':');
-            //cpe:2.3:a:apache:log4j:2.12.1:*:*:*:*:*:*:*
+            var matchCpe;
+            if (cpe[1] == '2.3') {
+               matchcpe = 'cpe:/a:' + cpe[2] + ':' + cpe[3];
+            } else {
+               matchcpe = 'cpe:/a:' + cpe[1] + ':' + cpe[2];
+            }
+            
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'Maven Coordinates\n\n```xml\n<dependency>\n   <groupId>${{ fromJSON(steps.purl-parser.outputs.result).namespace  }}</groupId>\n   <artifactId>${{ fromJSON(steps.purl-parser.outputs.result).name }}</artifactId>\n   <version>${{ fromJSON(steps.purl-parser.outputs.result).version }}</version>\n</dependency>\n```\n\n' +
+                    'Suppression rule:\n```xml\n' +
+                    '<suppress base="true">\n' +
+                    '   <notes><![CDATA[\n' +
+                    '   FP per issue #' + context.issue.number + '\n' +
+                    '   ]]></notes>\n' +
+                    '   <packageUrl regex="true">' + purl + '</packageUrl>\n' +
+                    '   <cpe>' + matchcpe + '</cpe>\n' +
+                    '</suppress>\n```\n\n' +
+                    'Link to test results: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+            })
+      - name: Npm FP Comment
+        if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'maven' }}
+        uses: actions/github-script@v6
+        with:
+          script: |
+            var name = '${{ fromJSON(steps.purl-parser.outputs.result).name }}';
+            var packageType = '${{ fromJSON(steps.purl-parser.outputs.result).type }}';
+            var purl = '^pkg:' + packageType;
+            if(namespace !== null && namespace !== '') {
+                purl += '/' + namespace.replaceAll('.','\\.');
+            }
+            if(name !== null && name !== '') {
+                purl += '/' + name.replaceAll('.','\\.');
+            }
+            purl += '@.*$';
+            var cpe = '${{ fromJSON(steps.issue-parser.outputs.jsonString).purl }}'.split(':');
             var matchCpe;
             if (cpe[1] == '2.3') {
                matchcpe = 'cpe:/a:' + cpe[2] + ':' + cpe[3];
@@ -135,9 +179,6 @@ jobs:
       - name: Nuget FP
         if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'nuget' }}
         run: echo "nuget"
-      - name: npm FP
-        if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'npm' }}
-        run: echo "npm"
         
       - name: issue context
         run: |
