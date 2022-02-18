@@ -175,6 +175,7 @@ jobs:
             }
             purl += '@.*$';
             var cpe = '${{ fromJSON(steps.issue-parser.outputs.jsonString).purl }}'.split(':');
+            console.log(cpe);
             var matchCpe;
             if (cpe[1] == '2.3') {
                matchcpe = 'cpe:/a:' + cpe[2] + ':' + cpe[3];
