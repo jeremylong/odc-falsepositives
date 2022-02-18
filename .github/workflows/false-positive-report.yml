@@ -146,9 +146,6 @@ jobs:
             var name = '${{ fromJSON(steps.purl-parser.outputs.result).name }}';
             var packageType = '${{ fromJSON(steps.purl-parser.outputs.result).type }}';
             var purl = '^pkg:' + packageType;
-            if(namespace !== null && namespace !== '') {
-                purl += '/' + namespace.replaceAll('.','\\.');
-            }
             if(name !== null && name !== '') {
                 purl += '/' + name.replaceAll('.','\\.');
             }
