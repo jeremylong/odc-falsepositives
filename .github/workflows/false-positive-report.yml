@@ -94,7 +94,7 @@ jobs:
         if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'nuget' }}
         run: |
           dotnet new classlib --language C# --name fp-project --no-update-check 
-          dotnet add package ${{ fromJSON(steps.purl-parser.outputs.result).name }} --version {{ fromJSON(steps.purl-parser.outputs.result).version }}
+          dotnet add package ${{ fromJSON(steps.purl-parser.outputs.result).name }} --version ${{ fromJSON(steps.purl-parser.outputs.result).version }}
           dotnet publish
       - name: "Check for setup complete"
         uses: andstor/file-existence-action@v1
