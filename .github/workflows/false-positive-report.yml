@@ -88,6 +88,7 @@ jobs:
           npm install ${{ fromJSON(steps.purl-parser.outputs.result).name }}@${{ fromJSON(steps.purl-parser.outputs.result).version }}
       - name: "Check for setup complete"
         uses: andstor/file-existence-action@v1
+        id: check_files
         with:
           files: "./fp-project"
       - name: Run ODC
