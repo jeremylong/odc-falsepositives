@@ -86,7 +86,12 @@ jobs:
           cd ./fp-project
           npm init -y
           npm install ${{ fromJSON(steps.purl-parser.outputs.result).name }}@${{ fromJSON(steps.purl-parser.outputs.result).version }}
+      - name: "Check for setup complete"
+        uses: andstor/file-existence-action@v1
+        with:
+          files: "./fp-project"
       - name: Run ODC
+        if: steps.check_files.outputs.files_exists == 'true'
         uses: dependency-check/Dependency-Check_Action@main
         with:
           project: 'fp-test'
@@ -94,6 +99,7 @@ jobs:
           format: 'HTML'  
           args: >
             --failOnCVSS 11
+            --enableExperimental
       - name: Upload FP Report
         uses: actions/upload-artifact@master
         with:
@@ -162,7 +168,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: 'Npm Coordinates\n\n```shell\npm -i ${{ fromJSON(steps.purl-parser.outputs.result).name }}@${{ fromJSON(steps.purl-parser.outputs.result).version }}\n```\n\n' +
+              body: 'Npm Coordinates\n\n```shell\nnpm -i ${{ fromJSON(steps.purl-parser.outputs.result).name }}@${{ fromJSON(steps.purl-parser.outputs.result).version }}\n```\n\n' +
                     'Suppression rule:\n```xml\n' +
                     '<suppress base="true">\n' +
                     '   <notes><![CDATA[\n' +
