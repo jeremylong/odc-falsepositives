@@ -136,9 +136,9 @@ jobs:
             var cpe = '${{ fromJSON(steps.issue-parser.outputs.jsonString).cpe }}'.split(':');
             var matchCpe;
             if (cpe[1] == '2.3') {
-               matchcpe = 'cpe:/a:' + cpe[2] + ':' + cpe[3];
+               matchcpe = 'cpe:/a:' + cpe[3] + ':' + cpe[4];
             } else {
-               matchcpe = 'cpe:/a:' + cpe[1] + ':' + cpe[2];
+               matchcpe = 'cpe:/a:' + cpe[2] + ':' + cpe[3];
             }
             
             await github.rest.issues.createComment({
@@ -178,9 +178,9 @@ jobs:
             console.log(cpe);
             var matchCpe;
             if (cpe[1] == '2.3') {
-               matchcpe = 'cpe:/a:' + cpe[2] + ':' + cpe[3];
+               matchcpe = 'cpe:/a:' + cpe[3] + ':' + cpe[4];
             } else {
-               matchcpe = 'cpe:/a:' + cpe[1] + ':' + cpe[2];
+               matchcpe = 'cpe:/a:' + cpe[2] + ':' + cpe[3];
             }
             
             await github.rest.issues.createComment({
@@ -219,9 +219,9 @@ jobs:
             var cpe = '${{ fromJSON(steps.issue-parser.outputs.jsonString).cpe }}'.split(':');
             var matchCpe;
             if (cpe[1] == '2.3') {
-               matchcpe = 'cpe:/a:' + cpe[2] + ':' + cpe[3];
+               matchcpe = 'cpe:/a:' + cpe[3] + ':' + cpe[4];
             } else {
-               matchcpe = 'cpe:/a:' + cpe[1] + ':' + cpe[2];
+               matchcpe = 'cpe:/a:' + cpe[2] + ':' + cpe[3];
             }
             
             await github.rest.issues.createComment({
