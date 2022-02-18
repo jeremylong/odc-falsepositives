@@ -165,7 +165,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: 'Maven Coordinates\n\n```xml\n<dependency>\n   <groupId>${{ fromJSON(steps.purl-parser.outputs.result).namespace  }}</groupId>\n   <artifactId>${{ fromJSON(steps.purl-parser.outputs.result).name }}</artifactId>\n   <version>${{ fromJSON(steps.purl-parser.outputs.result).version }}</version>\n</dependency>\n```\n\n' +
+              body: 'Npm Coordinates\n\n```shell\npm -i ${{ fromJSON(steps.purl-parser.outputs.result).name }}@${{ fromJSON(steps.purl-parser.outputs.result).version }}\n```\n\n' +
                     'Suppression rule:\n```xml\n' +
                     '<suppress base="true">\n' +
                     '   <notes><![CDATA[\n' +
