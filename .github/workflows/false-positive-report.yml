@@ -139,7 +139,7 @@ jobs:
                     'Link to test results: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'
             })
       - name: Npm FP Comment
-        if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'maven' }}
+        if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'npm' }}
         uses: actions/github-script@v6
         with:
           script: |
