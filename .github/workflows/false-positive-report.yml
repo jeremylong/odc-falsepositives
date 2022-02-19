@@ -92,11 +92,13 @@ jobs:
           cd ..
       - name: Setup npm fp-project
         if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'npm' }}
+        env:
+          PACKAGE: ${{ fromJSON(steps.purl-parser.outputs.result).name }}@${{ fromJSON(steps.purl-parser.outputs.result).version }}
         run: |
           mkdir ./fp-project
           cd ./fp-project
           npm init -y
-          npm install ${{ fromJSON(steps.purl-parser.outputs.result).name }}@${{ fromJSON(steps.purl-parser.outputs.result).version }}
+          npm install "$PACKAGE"
           cd ..
       - uses: actions/setup-dotnet@v1
         if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'nuget' }}
