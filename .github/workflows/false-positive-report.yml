@@ -72,7 +72,7 @@ jobs:
         env:
           GROUPID: ${{ fromJSON(steps.purl-parser.outputs.result).namespace }}
           ARTIFACTID: ${{ fromJSON(steps.purl-parser.outputs.result).name }}
-          VERSiON: ${{ fromJSON(steps.purl-parser.outputs.result).version }}
+          VERSION: ${{ fromJSON(steps.purl-parser.outputs.result).version }}
         run: |
           ver=$(curl -s https://jeremylong.github.io/DependencyCheck/current.txt)
           mkdir ./fp-project
