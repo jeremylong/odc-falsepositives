@@ -69,6 +69,10 @@ jobs:
             }
       - name: Setup maven fp-project
         if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'maven' }}
+        env:
+          GROUPID: ${{ fromJSON(steps.purl-parser.outputs.result).namespace }}
+          ARTIFACTID: ${{ fromJSON(steps.purl-parser.outputs.result).name }}
+          VERSiON: ${{ fromJSON(steps.purl-parser.outputs.result).version }}
         run: |
           ver=$(curl -s https://jeremylong.github.io/DependencyCheck/current.txt)
           mkdir ./fp-project
@@ -76,9 +80,9 @@ jobs:
           echo -n $ver >> ./fp-project/pom.xml
           cat ${{github.workspace}}/odc/.github/workflows/files/maven-pom.middle >> ./fp-project/pom.xml
           echo "<dependency>" >> ./fp-project/pom.xml
-          echo "   <groupId>${{ fromJSON(steps.purl-parser.outputs.result).namespace }}</groupId>" >> ./fp-project/pom.xml
-          echo "   <artifactId>${{ fromJSON(steps.purl-parser.outputs.result).name }}</artifactId>" >> ./fp-project/pom.xml
-          echo "   <version>${{ fromJSON(steps.purl-parser.outputs.result).version }}</version>" >> ./fp-project/pom.xml
+          echo "   <groupId>$GROUPID</groupId>" >> ./fp-project/pom.xml
+          echo "   <artifactId>$ARTIFACTID</artifactId>" >> ./fp-project/pom.xml
+          echo "   <version>$VERSION</version>" >> ./fp-project/pom.xml
           echo "</dependency>" >> ./fp-project/pom.xml
           cat ${{github.workspace}}/odc/.github/workflows/files/maven-pom.end >> ./fp-project/pom.xml
           cd ./fp-project
