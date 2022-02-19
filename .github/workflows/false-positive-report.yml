@@ -191,16 +191,21 @@ jobs:
       - name: Comment on npm issue
         if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'npm' }}
         uses: actions/github-script@v6
+        env:
+          NAME: ${{ fromJSON(steps.purl-parser.outputs.result).name }}
+          VERSION: ${{ fromJSON(steps.purl-parser.outputs.result).version }}
+          TYPE: ${{ fromJSON(steps.purl-parser.outputs.result).type }}
+          CPE: ${{ fromJSON(steps.issue-parser.outputs.jsonString).cpe }}
         with:
           script: |
-            var name = '${{ fromJSON(steps.purl-parser.outputs.result).name }}';
-            var packageType = '${{ fromJSON(steps.purl-parser.outputs.result).type }}';
+            var name = process.env.NAME;
+            var packageType = process.env.TYPE;
             var purl = '^pkg:' + packageType;
             if(name !== null && name !== '') {
                 purl += '/' + name.replaceAll('.','\\.');
             }
             purl += '@.*$';
-            var cpe = '${{ fromJSON(steps.issue-parser.outputs.jsonString).cpe }}'.split(':');
+            var cpe = process.env.CPE.split(':');
             console.log(cpe);
             var matchCpe;
             if (cpe[1] == '2.3') {
@@ -213,7 +218,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: 'Npm Coordinates\n\n```shell\nnpm -i ${{ fromJSON(steps.purl-parser.outputs.result).name }}@${{ fromJSON(steps.purl-parser.outputs.result).version }}\n```\n\n' +
+              body: 'Npm Coordinates\n\n```shell\nnpm -i ' + process.env.NAME + '@' + process.env.VERSION + '\n```\n\n' +
                     'Suppression rule:\n```xml\n' +
                     '<suppress base="true">\n' +
                     '   <notes><![CDATA[\n' +
@@ -222,7 +227,7 @@ jobs:
                     '   <packageUrl regex="true">' + purl + '</packageUrl>\n' +
                     '   <cpe>' + matchcpe + '</cpe>\n' +
                     '</suppress>\n```\n\n' +
-                    'Link to test results: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+                    'Link to test results: ' + context.serverUrl + '/' + context.repo.owner + '/' + context.repo.repo + '/actions/runs/' + context.runId
             })
             github.rest.issues.addLabels({
               issue_number: context.issue.number,
@@ -263,7 +268,7 @@ jobs:
                     '   <packageUrl regex="true">' + purl + '</packageUrl>\n' +
                     '   <cpe>' + matchcpe + '</cpe>\n' +
                     '</suppress>\n```\n\n' +
-                    'Link to test results: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+                    'Link to test results: ' + context.serverUrl + '/' + context.repo.owner + '/' + context.repo.repo + '/actions/runs/' + context.runId
             })
             github.rest.issues.addLabels({
               issue_number: context.issue.number,
