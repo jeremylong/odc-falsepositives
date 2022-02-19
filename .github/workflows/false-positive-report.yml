@@ -235,19 +235,24 @@ jobs:
               repo: context.repo.repo,
               labels: ['npm']
             })
-      - name: Comment on nuget issue
+      - name: Comment on dotnet issue
         if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'nuget' }}
         uses: actions/github-script@v6
+        env:
+          NAME: ${{ fromJSON(steps.purl-parser.outputs.result).name }}
+          VERSION: ${{ fromJSON(steps.purl-parser.outputs.result).version }}
+          TYPE: ${{ fromJSON(steps.purl-parser.outputs.result).type }}
+          CPE: ${{ fromJSON(steps.issue-parser.outputs.jsonString).cpe }}
         with:
           script: |
-            var name = '${{ fromJSON(steps.purl-parser.outputs.result).name }}';
-            var packageType = '${{ fromJSON(steps.purl-parser.outputs.result).type }}';
+            var name = process.env.NAME;
+            var packageType = process.env.TYPE;
             var purl = '^pkg:' + packageType;
             if(name !== null && name !== '') {
                 purl += '/' + name.replaceAll('.','\\.');
             }
             purl += '@.*$';
-            var cpe = '${{ fromJSON(steps.issue-parser.outputs.jsonString).cpe }}'.split(':');
+            var cpe = process.env.CPE.split(':');
             var matchCpe;
             if (cpe[1] == '2.3') {
                matchcpe = 'cpe:/a:' + cpe[3] + ':' + cpe[4];
@@ -259,7 +264,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: 'Nuget Coordinates\n\n```shell\ndotnet add package ${{ fromJSON(steps.purl-parser.outputs.result).name }} --version ${{ fromJSON(steps.purl-parser.outputs.result).version }}\n```\n\n' +
+              body: 'Nuget Coordinates\n\n```shell\ndotnet add package ' + process.env.NAME + ' --version ' + process.env.VERSION + '\n```\n\n' +
                     'Suppression rule:\n```xml\n' +
                     '<suppress base="true">\n' +
                     '   <notes><![CDATA[\n' +
