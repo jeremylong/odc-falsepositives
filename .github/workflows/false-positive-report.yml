@@ -88,7 +88,7 @@ jobs:
           cd ./fp-project
           ## not ideal as verify would be better then using the docker image...
           ##mvn verify
-          mvn dependency:copy-dependencies
+          mvn dependency:copy-dependencies --no-transfer-progress --batch-mode 
           cd ..
       - name: Setup npm fp-project
         if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'npm' }}
@@ -100,16 +100,20 @@ jobs:
           npm init -y
           npm install "$PACKAGE"
           cd ..
-      - uses: actions/setup-dotnet@v1
+      - name: Setup dotnet
         if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'nuget' }}
+        uses: actions/setup-dotnet@v1
         with:
           dotnet-version: '6.0.x'
       - name: Setup nuget fp-project
         if: ${{ fromJSON(steps.purl-parser.outputs.result).type == 'nuget' }}
+        env:
+          PACKAGE: ${{ fromJSON(steps.purl-parser.outputs.result).name }}
+          VERSION: ${{ fromJSON(steps.purl-parser.outputs.result).version }}
         run: |
           dotnet new classlib --language C# --name fp-project --no-update-check 
           cd fp-project
-          dotnet add package ${{ fromJSON(steps.purl-parser.outputs.result).name }} --version ${{ fromJSON(steps.purl-parser.outputs.result).version }}
+          dotnet add package "$PACKAGE" --version "$VERSION"
           dotnet publish
           cd ..
       - name: "Check for setup complete"
