@@ -4,12 +4,12 @@
     <groupId>com.mycompany</groupId>
     <artifactId>odc-falsepositives</artifactId>
     <version>1.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <plugins.odc.version>7.0.0-SNAPSHOT</plugins.odc.version>
+        <plugins.odc.version>7.3.2</plugins.odc.version>
     </properties>
     <repositories>
         <repository>
@@ -90,6 +90,13 @@
             <name>iText Repository - snapshots</name>
             <url>https://repo.itextsupport.com/snapshot</url>
         </repository>
+        <repository>
+            <id>vaadin-addon</id>
+            <name>vaadin addons</name>
+            <url>http://vaadin.com/nexus/content/repositories/vaadin-addons/</url>
+        </repository>      
+        
+        	
     </repositories>
     <pluginRepositories>
         <pluginRepository>
@@ -114,48 +121,41 @@
         
     </pluginRepositories>
     <dependencies>
+
 <dependency>
-    <groupId>junit</groupId>
-    <artifactId>junit</artifactId>
-    <version>4.13.1</version>
-    <scope>test</scope>
+    <groupId>com.liferay.portal</groupId>
+    <artifactId>com.liferay.util.slf4j</artifactId>
+    <version>6.0.6</version>
 </dependency>
+
+<!--
 <dependency>
-    <groupId>commons-io</groupId>
-    <artifactId>commons-io</artifactId>
-    <version>2.8.0</version>
-    <scope>test</scope>
-</dependency>
-<dependency>
-    <groupId>org.apache.commons</groupId>
-    <artifactId>commons-lang3</artifactId>
-    <version>3.7</version>
-    <scope>test</scope>
-</dependency>
-<dependency>
-    <groupId>org.apache.httpcomponents.client5</groupId>
-    <artifactId>httpclient5</artifactId>
-    <version>5.0.3</version>
-    <scope>test</scope>
-</dependency>
-<dependency>
-    <groupId>org.apache.httpcomponents.core5</groupId>
-    <artifactId>httpcore5</artifactId>
-    <version>5.0.3</version>
-    <scope>test</scope>
-</dependency>
-<dependency>
-    <groupId>org.hamcrest</groupId>
-    <artifactId>hamcrest</artifactId>
-    <version>2.2</version>
-    <scope>test</scope>
+    <groupId>org.apache.hadoop</groupId>
+    <artifactId>hadoop-core</artifactId>
+    <version>0.20.2</version>
 </dependency>
 
 
 
+<dependency>
+    <groupId>com.yahoo.vespa</groupId>
+    <artifactId>container-dev</artifactId>
+    <version>8.74.15</version>
+    <scope>provided</scope>
+</dependency>
+<dependency>
+    <groupId>org.apache.avro</groupId>
+    <artifactId>avro</artifactId>
+    <version>1.9.0</version>
+</dependency>
 
+            <dependency>
+                <groupId>org.jsoup</groupId>
+                <artifactId>jsoup</artifactId>
+                <version>1.10.2</version>
+            </dependency>
 
-
+-->
         
         <!--dependency>
             <groupId>javax.servlet</groupId>
@@ -223,16 +223,18 @@
                 <inherited>false</inherited>
                 <configuration>
                     <formats>
-                        <format>HTML</format>
-                        <format>JUNIT</format>
-                        <format>SARIF</format>
+                        <format>ALL</format>
                     </formats>
-                    <retireJsAnalyzerEnabled>false</retireJsAnalyzerEnabled>
+                    <!--scanPlugins>true</scanPlugins-->
+                    <retireJsAnalyzerEnabled>true</retireJsAnalyzerEnabled>
+                    <retireJsForceUpdate>true</retireJsForceUpdate>
                     <prettyPrint>true</prettyPrint>
                     <junitFailOnCVSS>6.0</junitFailOnCVSS>
                     <failBuildOnCVSS>0</failBuildOnCVSS>
+                    <nodeAuditAnalyzerEnabled>false</nodeAuditAnalyzerEnabled>
+                    <nodeAnalyzerEnabled>false</nodeAnalyzerEnabled>
                     <hintsFile>${basedir}/src/main/resources/hints.xml</hintsFile>
-                    <enableExperimental>true</enableExperimental>
+                    <enableExperimental>false</enableExperimental>
                     <suppressionFiles>
                         <suppresionFile>${basedir}/src/main/conf/suppression.xml</suppresionFile>
                     </suppressionFiles>
@@ -255,7 +257,7 @@
                 <executions>
                     <execution>
                         <goals>
-                            <goal>aggregate</goal>
+                            <goal>check</goal>
                         </goals>
                     </execution>
                 </executions>
