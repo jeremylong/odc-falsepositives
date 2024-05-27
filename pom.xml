@@ -9,7 +9,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <plugins.odc.version>7.3.2</plugins.odc.version>
+        <!--<plugins.odc.version>8.4.3</plugins.odc.version>-->
+        <plugins.odc.version>9.0.10</plugins.odc.version>
     </properties>
     <repositories>
         <repository>
@@ -120,42 +121,40 @@
         </pluginRepository>
         
     </pluginRepositories>
+    
     <dependencies>
-
 <dependency>
-    <groupId>com.liferay.portal</groupId>
-    <artifactId>com.liferay.util.slf4j</artifactId>
-    <version>6.0.6</version>
-</dependency>
-
-<!--
-<dependency>
-    <groupId>org.apache.hadoop</groupId>
-    <artifactId>hadoop-core</artifactId>
-    <version>0.20.2</version>
+  <groupId>org.scalameta</groupId>
+  <artifactId>common_2.13</artifactId>
+  <version>4.9.1</version>
 </dependency>
 
 
 
-<dependency>
-    <groupId>com.yahoo.vespa</groupId>
-    <artifactId>container-dev</artifactId>
-    <version>8.74.15</version>
-    <scope>provided</scope>
-</dependency>
-<dependency>
-    <groupId>org.apache.avro</groupId>
-    <artifactId>avro</artifactId>
-    <version>1.9.0</version>
-</dependency>
 
-            <dependency>
-                <groupId>org.jsoup</groupId>
-                <artifactId>jsoup</artifactId>
-                <version>1.10.2</version>
-            </dependency>
 
--->
+        <!--
+        
+        
+        <dependency>
+            <groupId>com.yahoo.vespa</groupId>
+            <artifactId>container-dev</artifactId>
+            <version>8.74.15</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.avro</groupId>
+            <artifactId>avro</artifactId>
+            <version>1.9.0</version>
+        </dependency>
+        
+                    <dependency>
+                        <groupId>org.jsoup</groupId>
+                        <artifactId>jsoup</artifactId>
+                        <version>1.10.2</version>
+                    </dependency>
+        
+        -->
         
         <!--dependency>
             <groupId>javax.servlet</groupId>
@@ -213,24 +212,27 @@
                 <groupId>org.owasp</groupId>
                 <artifactId>dependency-check-maven</artifactId>
                 <version>${plugins.odc.version}</version>
-                <dependencies>
+<!--                <dependencies>
                     <dependency>
                         <groupId>org.postgresql</groupId>
                         <artifactId>postgresql</artifactId>
                         <version>42.2.20</version>
                     </dependency>
-                </dependencies>
+                </dependencies>-->
                 <inherited>false</inherited>
                 <configuration>
+                    <nvdDatafeedUrl>https://dependency-check.github.io/DependencyCheck_Builder/nvd_cache/</nvdDatafeedUrl>
                     <formats>
-                        <format>ALL</format>
+                        <format>HTML</format>
                     </formats>
-                    <!--scanPlugins>true</scanPlugins-->
+                    <nvdValidForHours>24</nvdValidForHours>
+                    <nvdApiDelay>3000</nvdApiDelay>
+                    <scanPlugins>false</scanPlugins>
                     <retireJsAnalyzerEnabled>true</retireJsAnalyzerEnabled>
                     <retireJsForceUpdate>true</retireJsForceUpdate>
                     <prettyPrint>true</prettyPrint>
                     <junitFailOnCVSS>6.0</junitFailOnCVSS>
-                    <failBuildOnCVSS>0</failBuildOnCVSS>
+                    <failBuildOnCVSS>11</failBuildOnCVSS>
                     <nodeAuditAnalyzerEnabled>false</nodeAuditAnalyzerEnabled>
                     <nodeAnalyzerEnabled>false</nodeAnalyzerEnabled>
                     <hintsFile>${basedir}/src/main/resources/hints.xml</hintsFile>
