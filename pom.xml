@@ -10,7 +10,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <!--<plugins.odc.version>8.4.3</plugins.odc.version>-->
-        <plugins.odc.version>9.0.10</plugins.odc.version>
+        <plugins.odc.version>9.2.0</plugins.odc.version>
     </properties>
     <repositories>
         <repository>
