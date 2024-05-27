@@ -1,0 +1,12 @@
+buildscript {
+  repositories {
+    maven {
+      url = uri("https://plugins.gradle.org/m2/")
+    }
+  }
+  dependencies {
+    classpath("org.owasp:dependency-check-gradle:6.5.3")
+  }
+}
+
+apply(plugin = "org.owasp.dependencycheck")

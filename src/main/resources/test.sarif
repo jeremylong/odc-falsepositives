@@ -1,0 +1,41 @@
+{
+    "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+    "version": "2.1.0",
+    "runs": [ 
+        {
+            "tool": {
+                "driver": {
+                    "name": "dependency-check",
+                    "version": "6.5.4-SNAPSHOT",
+                    "informationUri": "https://jeremylong.github.io/DependencyCheck/",
+                    "rules": [ 
+                        {
+                            "id": "CVE-2021-35515",
+                            "shortDescription": {
+                                "text": "HIGH severity - CWE-834 Excessive Iteration vulnerability in  in pkg:maven/org.apache.commons/commons-compress@1.19"
+                            },
+                            "fullDescription": {
+                                "text": "When reading a specially crafted 7Z archive, the construction of the list of codecs that decompress an entry can result in an infinite loop. This could be used to mount a denial of service attack against services that use Compress' sevenz package."
+                            }
+                        } 
+                    ]
+                }
+            },
+            "results": [ 
+                {
+                    "ruleId": "CVE-2021-35515",
+                    "level": "error",
+                    "message": {
+                        "text": "CVE-2021-35515 - When reading a specially crafted 7Z archive, the construction of the list of codecs that decompress an entry can result in an infinite loop. This could be used to mount a denial of service attack against services that use Compress' sevenz package."
+                    },
+                    "locations": [ 
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "/Users/jeremy/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar"
+                                }
+                            }
+                        }]
+                }]
+        }]
+}
