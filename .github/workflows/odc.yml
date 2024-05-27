@@ -18,10 +18,14 @@ jobs:
         with:
           java-version: 8
           distribution: 'zulu'
+      - name: GitHub Script
+        uses: actions/github-script@v6.0.0
+        with:
+          script: |
+            console.log('head: ${{ github.event.inputs.head }}');
       - name: maven verify
         id: build
         run: |
-            echo "${{ github.event.inputs.head }}"
             mvn verify --no-transfer-progress --batch-mode
       - name: Upload sarif report
         if: always()
